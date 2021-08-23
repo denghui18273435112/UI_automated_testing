@@ -1,0 +1,8 @@
+固定使用禅道
+版本：禅道的版本12.4.3
+禅道的一键安装包存放至WPS上
+
+如果chrome浏览器出现版本更新，请及时下载驱动
+下载地址：https://chromedriver.storage.googleapis.com/index.html
+
+浏览器的驱动文件存放位置 G:\python\selenium\webdriver
