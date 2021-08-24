@@ -1,3 +1,5 @@
+import win32gui
+import win32con
 from selenium.webdriver.common.keys import Keys
 from config.Conf import ConfigYaml
 from selenium.webdriver.support.select import Select
@@ -57,11 +59,12 @@ class selenium(object):
         """
         self.driver.quit()
 
-    def clear(self):
+    def clear(self,location):
         """
         清空文本数据
         :return:
         """
+        self.driver.find_element_by_css_selector(location)
         self.driver.clear()
 
     def get_url(self):
@@ -86,16 +89,15 @@ class selenium(object):
         """
         self.driver.send_keys(content)
 
-    def text(self,location):
+    def text_acquire(self, location):
         """
-        根据定位获取文本信息
+        根据定位获取文本信息，并直接返回
         :param location:
         :return:
         """
         dingwei = self.driver.find_element_by_css_selector(location)
         return dingwei.text
 
-    #
     def find_element_by_id(self,id):
         self.driver.find_element_by_id(id)
     def find_element_by_name(self,name):
@@ -110,9 +112,41 @@ class selenium(object):
         self.driver.find_element_by_xpath(name)
     def find_element_by_css_selector(self,name):
         self.driver.find_element_by_css_selector(name)
+    def find_elements_by_id(self,id):
+        self.driver.find_elements_by_id(id)
+    def find_elements_by_name(self,name):
+        self.driver.find_elements_by_name(name)
+    def find_elements_by_class_name(self,class_name):
+        self.driver.find_elements_by_class_name(class_name)
+    def find_elements_by_link_text(self,name):
+        self.driver.find_elements_by_link_text(name)
+    def find_elements_by_partial_link_text(self,name):
+        self.driver.find_elements_by_partial_link_text(name)
+    def find_elements_by_xpath(self,name):
+        self.driver.find_elements_by_xpath(name)
+    def find_elements_by_css_selector(self,name):
+        self.driver.find_elements_by_css_selector(name)
 
-
-
+    def pull_down_choose(self,location1,location2,type="CSS_CSS"):
+        """
+        下拉选择
+        一般用于固定下拉选项；一把使用CSS_CSS类型
+        :param location1:
+        :param location2:
+        :param type:
+        :return:
+        """
+        time.sleep(2)
+        self.driver.implicitly_wait(30)
+        self.driver.find_element_by_css_selector(location1).click()
+        self.driver.implicitly_wait(30)
+        time.sleep(2)
+        if type=="CSS_CSS":
+            self.driver.find_element_by_css_selector(location2).click()
+        if type=="CSS_XPATH":
+            self.driver.find_element_by_xpath(location2).click()
+        time.sleep(3)
+        self.driver.implicitly_wait(30)
 
     def jietu(self,filePath):
         """
@@ -163,14 +197,9 @@ class selenium(object):
         upload_files(photo)
         self.driver.implicitly_wait(10)
         time.sleep(0.5)
-
-
-
-
-
         time.sleep(1)
 
-    def FEBCS_CCSKK(self,location,content):
+    def FEBCS_CCSKK(self,location,content,ifhuiche=False):
         """
         定位-点击-清空-输入-隐性等待10S-回车
         find_element_by_css_selector 缩写FEBCS
@@ -178,12 +207,16 @@ class selenium(object):
         :param content: 输入内容
         :return:
         """
+        self.driver.implicitly_wait(10)
+        time.sleep(2)
         self.driver.find_element_by_css_selector(location).click()
         self.driver.find_element_by_css_selector(location).clear()
         self.driver.find_element_by_css_selector(location).send_keys(content)
-        self.driver.find_element_by_css_selector(location).send_keys(Keys.ENTER)
+        if ifhuiche==True:
+            self.driver.find_element_by_css_selector(location).send_keys(Keys.ENTER)
         self.driver.implicitly_wait(10)
-        time.sleep(0.5)
+        time.sleep(3)
+
 
     def input_text(self, location, content,fushu=None, Enter=None):
         """
@@ -261,7 +294,7 @@ class selenium(object):
         :param location:位置
         :return:
         """
-        return  self.driver.find_element_by_css_selector(location).text
+        return  self.driver.find_element_by_css_selector(location).text_acquire
 
     def select_pullDown_frame(self,location,option):
         """
@@ -278,7 +311,7 @@ class selenium(object):
 
     def drop_down_box(self, location, location1, weizhi=None):
         """
-        下拉框选择
+        下拉框选择【常用之一】
         分两步：第一步点击弹出下拉框；第二步：选择下拉框选项
         备注：都支持复数
         @param location:第一步点击定位
@@ -286,7 +319,6 @@ class selenium(object):
         @param weizhi: 第一步定位的位置
         @return:
         """
-
         time.sleep(1)
         if (">" in location or "." in location) and weizhi != None :
             self.driver.find_elements_by_css_selector(location)[int(weizhi)].click()
@@ -363,34 +395,20 @@ class selenium(object):
         self.driver.implicitly_wait(10)
 
 
+
     def url_skip(self, name):
         """
         url跳转
         @param name: 模块名称
         @return:
         """
-        login =Yaml_read("login.yaml")
-        time.sleep(2)
-        if name == "我的地盘-日程":
-            self.driver.get(login["url"]+"/my-todo.html")
-        if name == "我的地盘-首页":
-            self.driver.get(login["url"]+"/my/")
-        if name == "我的地盘-任务":
-            self.driver.get(login["url"]+"/my-task.allure-report")
-        if name == "我的地盘-Bug":
-            self.driver.get(login["url"]+"/my-bug.allure-report")
-        if name == "测试-Bug":
-            self.driver.get(login["url"]+"/bug-browse-2.html")
-        if name =="组织-用户":
-            self.driver.get(login["url"]+"/company-browse.html")
-        if name=="项目-看板":
-            self.driver.get(login["url"]+"/project-kanban-2.allure-report")
-        else:
-            self.driver.get(login["url"]+name)
-        time.sleep(2)
+        login =Yaml_read("all.yaml","login")
+        time.sleep(0.5)
+        self.driver.get(login["new_url"]+name)
+        time.sleep(5)
 
 
-    def execute_script(self,shuxing,id,zhi):
+    def execute_script_new(self,shuxing,id,zhi):
         """
         更改页面属性
         :return:
@@ -446,20 +464,28 @@ class selenium(object):
         if operation == "NO":
             self.driver.switch_to.alter.dismisss()
         if operation == "TEXT":
-            self.driver.switch_to.alert.text()
+            self.driver.switch_to.alert.text_acquire()
         if if_input !=None:
             self.driver.switch_to.alert.send_keys(operation)
 
-    def Page_scrolling(self,location=10000):
+    def Page_scrolling(self,location=1000,type="div"):
         """
         页面滚动条滚动   【常用之一】
         :param location:滚动的位置； 10000：最底部；0：回到顶部
         :return:
         """
-        js = 'var action=document.documentElement.scrollTop={}'.format(location)
+        if type=="HTML":
+            js = 'var action=document.documentElement.scrollTop={}'.format(location)
+            self.driver.execute_script(js)
+        if type=="body":
+            js = "var q=document.body.scrollTop={}".format(location)
+            self.driver.execute_script(js)
+        if type=="div":
+            js = "var q=document.getElementsByClassName('container')[0].scrollTop={}".format(location)
+            self.driver.execute_script(js)
+
+    def JS(self,js):
         self.driver.execute_script(js)
-        # js = "window.scrollTo({0},{1})".format(location,location)
-        # self.driver.execute_script(js)
 
     def click_two(self, location,location1):
         """
@@ -502,6 +528,7 @@ class selenium(object):
         elif ">" in location or "#" in location or "." in location :
             self.driver.find_element_by_css_selector(location).click()
         time.sleep(2)
+        self.driver.implicitly_wait(10)
 
 
     def pullDown_frame(self,location,option_name,label_name="li",matching_mode=True,joint=True):

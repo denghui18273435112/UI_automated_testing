@@ -1,5 +1,153 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "首页-数字概览",
+    "children" : [ {
+      "name" : "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确",
+      "children" : [ {
+        "name" : "test_overview_digital",
+        "uid" : "64c57a5cbf184380",
+        "parentUid" : "b41aa442cf4f6b149ceeb4bb26a63009",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797709088,
+          "stop" : 1629797717811,
+          "duration" : 8723
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b41aa442cf4f6b149ceeb4bb26a63009"
+    }, {
+      "name" : "验证 参训/达标走势图  是否正确返回",
+      "children" : [ {
+        "name" : "test_charts",
+        "uid" : "d14af0bad7b6fb8c",
+        "parentUid" : "e7933dd7c9b69c61bdefc610783f6906",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797717815,
+          "stop" : 1629797746906,
+          "duration" : 29091
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7933dd7c9b69c61bdefc610783f6906"
+    }, {
+      "name" : "验证 各类达标情况  是否正确返回",
+      "children" : [ {
+        "name" : "test_kinds_standards",
+        "uid" : "3502c260a5fb443f",
+        "parentUid" : "c68d2e944845e492114d6fca871e9348",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629797746910,
+          "stop" : 1629797755524,
+          "duration" : 8614
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c68d2e944845e492114d6fca871e9348"
+    } ],
+    "uid" : "f51c4d5aa35529306990a1b6bf2385fb"
+  }, {
+    "name" : "首页-学员详情",
+    "children" : [ {
+      "name" : "验证 查询功能",
+      "children" : [ {
+        "name" : "test_student_details",
+        "uid" : "6ddd01e9d2c7628c",
+        "parentUid" : "2c3cd703d9ff507784b3006caaf9e2f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797755572,
+          "stop" : 1629797806731,
+          "duration" : 51159
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c3cd703d9ff507784b3006caaf9e2f4"
+    } ],
+    "uid" : "2b12acb2ab781c830af2d514c6e9f281"
+  }, {
+    "name" : "首页-公司数据",
+    "children" : [ {
+      "name" : "验证 公司数据",
+      "children" : [ {
+        "name" : "test_company_data",
+        "uid" : "e805726fce91f550",
+        "parentUid" : "8efc6a7d0852b2dc955abbbde8423250",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797806736,
+          "stop" : 1629797827279,
+          "duration" : 20543
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8efc6a7d0852b2dc955abbbde8423250"
+    }, {
+      "name" : "验证 汇总数据",
+      "children" : [ {
+        "name" : "test_tabulate_data",
+        "uid" : "ddc38caf8047d062",
+        "parentUid" : "18ad1e74271a9694889d0a336fd48555",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797827284,
+          "stop" : 1629797835729,
+          "duration" : 8445
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "18ad1e74271a9694889d0a336fd48555"
+    } ],
+    "uid" : "0cbe7129fdef9f255b5af89275aba223"
+  }, {
+    "name" : "培训计划报送",
+    "children" : [ {
+      "name" : "验证 查询操作",
+      "children" : [ {
+        "name" : "test_submission",
+        "uid" : "1573d71c1cefbcbb",
+        "parentUid" : "59dc8e82e4b9859f9b514045bb6beecd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797835733,
+          "stop" : 1629797924372,
+          "duration" : 88639
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "59dc8e82e4b9859f9b514045bb6beecd"
+    } ],
+    "uid" : "ed7053fea79bada222b79e92356aa8a4"
+  }, {
+    "name" : "培训学分",
+    "children" : [ {
+      "name" : "验证 查询操作",
+      "children" : [ {
+        "name" : "test_inquire",
+        "uid" : "95e7dd7d9672ca05",
+        "parentUid" : "e3e01470338b25d75cc6db395c13d854",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629797924377,
+          "stop" : 1629798058971,
+          "duration" : 134594
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3e01470338b25d75cc6db395c13d854"
+    } ],
+    "uid" : "403a80e78070d19aed2dcac7efdaafb7"
+  } ]
 }

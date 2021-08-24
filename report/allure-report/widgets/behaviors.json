@@ -1,4 +1,59 @@
 {
-  "total" : 0,
-  "items" : [ ]
+  "total" : 5,
+  "items" : [ {
+    "uid" : "f51c4d5aa35529306990a1b6bf2385fb",
+    "name" : "首页-数字概览",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "0cbe7129fdef9f255b5af89275aba223",
+    "name" : "首页-公司数据",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "2b12acb2ab781c830af2d514c6e9f281",
+    "name" : "首页-学员详情",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "ed7053fea79bada222b79e92356aa8a4",
+    "name" : "培训计划报送",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "403a80e78070d19aed2dcac7efdaafb7",
+    "name" : "培训学分",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }

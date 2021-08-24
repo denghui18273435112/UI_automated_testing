@@ -1,1 +1,81 @@
-[ ]
+[ {
+  "uid" : "e805726fce91f550",
+  "name" : "test_company_data",
+  "time" : {
+    "start" : 1629797806736,
+    "stop" : 1629797827279,
+    "duration" : 20543
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64c57a5cbf184380",
+  "name" : "test_overview_digital",
+  "time" : {
+    "start" : 1629797709088,
+    "stop" : 1629797717811,
+    "duration" : 8723
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d14af0bad7b6fb8c",
+  "name" : "test_charts",
+  "time" : {
+    "start" : 1629797717815,
+    "stop" : 1629797746906,
+    "duration" : 29091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1573d71c1cefbcbb",
+  "name" : "test_submission",
+  "time" : {
+    "start" : 1629797835733,
+    "stop" : 1629797924372,
+    "duration" : 88639
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ddc38caf8047d062",
+  "name" : "test_tabulate_data",
+  "time" : {
+    "start" : 1629797827284,
+    "stop" : 1629797835729,
+    "duration" : 8445
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95e7dd7d9672ca05",
+  "name" : "test_inquire",
+  "time" : {
+    "start" : 1629797924377,
+    "stop" : 1629798058971,
+    "duration" : 134594
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3502c260a5fb443f",
+  "name" : "test_kinds_standards",
+  "time" : {
+    "start" : 1629797746910,
+    "stop" : 1629797755524,
+    "duration" : 8614
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ddd01e9d2c7628c",
+  "name" : "test_student_details",
+  "time" : {
+    "start" : 1629797755572,
+    "stop" : 1629797806731,
+    "duration" : 51159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

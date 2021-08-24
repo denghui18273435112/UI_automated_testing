@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert True == '各类达标情况总参训相加 不等于 总已参训人数'",
+      "children" : [ {
+        "name" : "test_kinds_standards",
+        "uid" : "3502c260a5fb443f",
+        "parentUid" : "f3dd5e6ff0e48683b113800e878181c0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629797746910,
+          "stop" : 1629797755524,
+          "duration" : 8614
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f3dd5e6ff0e48683b113800e878181c0"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

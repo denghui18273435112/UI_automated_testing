@@ -3,7 +3,6 @@ from config import Conf
 import datetime
 from config.Conf import ConfigYaml
 import os
-
 #定义日志级别的映射
 log_l={
     "info":logging.INFO,
@@ -11,22 +10,19 @@ log_l={
     "warning":logging.WARNING,
     "error":logging.ERROR
 }
-
 class Logger:
                                                                              #2定义参数；想想需要有哪些參數；生成日志文件名称、Logger名称、日志级别
     def __init__(self,log_file,log_Logger_name,log_level):
         self.log_file = log_file                                            #扩展名；在配置文件写
         self.log_Logger_name = log_Logger_name                              #Logger名称，不在配置文件写
         self.log_level = log_level                                          #日志级别；在配置文件写
-
         self.logger_name = logging.getLogger(self.log_Logger_name)          #第一步：设置logger名称
         self.logger_name.setLevel(log_l[self.log_level])                    #第二步：设置log级别
-
         self.logger = logging.getLogger(self.log_Logger_name)               #第一步：设置logger名称
         self.logger.setLevel(log_l[self.log_level])                         #第二步：设置log级别
-
         if not self.logger_name.handlers:                                   #判断handler是否存在
             #输入文件
+            print(self.log_file)
             fh_file = logging.FileHandler(self.log_file,encoding='utf-8')   #第三步：写入文件的handler
             fh_file.setLevel(log_l[self.log_level])                         #第四步：设置日志级别
             formatter = logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s")
@@ -34,11 +30,11 @@ class Logger:
             self.logger_name.addHandler(fh_file)                            #第六步：添加handler
 
              # 输出控制台
-            fh_stream = logging.StreamHandler()
-            fh_stream.setLevel(log_l[self.log_level])
-            formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s ')
-            fh_stream.setFormatter(formatter)
-            self.logger.addHandler(fh_stream)
+            # fh_stream = logging.StreamHandler()
+            # fh_stream.setLevel(log_l[self.log_level])
+            # formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s ')
+            # fh_stream.setFormatter(formatter)
+            # self.logger.addHandler(fh_stream)
 
 
 def generate_file():
@@ -69,10 +65,10 @@ def my_log(log_Logger_name = __file__):
         logger_name         logger名称
         log_Logger_name     日志文件打印部分  get_conf_log
     """
-    return Logger(log_file="\n"+generate_file(),log_Logger_name=log_Logger_name,log_level=  ConfigYaml().get_conf_log()).logger_name
+    return Logger(log_file=generate_file(),log_Logger_name=log_Logger_name,log_level=  ConfigYaml().get_conf_log()).logger_name
 
 if __name__ == '__main__':
-    my_log().debug("POST请求")
+    my_log().debug("ss")
 
 
 

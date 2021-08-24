@@ -38,8 +38,11 @@ def driver():
     selenium(driver).input_text("请输入账号",login["login_account"])
     selenium(driver).input_text("请输入密码",login["password"])
     while True:
+        #手动登录
         selenium(driver).click("请输入验证码",type="css")
         time.sleep(2)
+        #自动登录
+        #selenium(driver).input_text("请输入验证码",login["code"])
         selenium(driver).click("span.login-button")
         if selenium(driver).get_url() ==login["login_pass_url"]:
             break
