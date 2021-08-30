@@ -28,7 +28,9 @@ class user:
         self.driver.input_text("#password2", self.data["password2"])
         self.data["realname"] = self.data["realname"]+ "{}".format(self.driver.time_current_YmdHMS())
         self.driver.input_text("realname", self.data["realname"])
-        self.driver.text_input("#join",self.driver.time_current_Ymd(),Enter=True,empty=True)
+
+        self.driver.text_input("#join",self.driver.time_current_Ymd(),Enter=True,empty=True,type="css")
+
         self.driver.pullDown_frame("#role","//*[@id='role']/*[text()='{}']".format(self.data["position"]),joint=False)
         self.driver.pullDown_frame("#group_chosen > a > div:nth-child(3)",self.data["jurisdiction"],matching_mode=False)
 

@@ -2,152 +2,164 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "首页-数字概览",
+    "name" : "01 首页-数字概览",
     "children" : [ {
       "name" : "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确",
       "children" : [ {
         "name" : "test_overview_digital",
-        "uid" : "64c57a5cbf184380",
-        "parentUid" : "b41aa442cf4f6b149ceeb4bb26a63009",
+        "uid" : "4330c42507187f92",
+        "parentUid" : "33d4d8b12ec73da181d97cebd7396842",
         "status" : "passed",
         "time" : {
-          "start" : 1629797709088,
-          "stop" : 1629797717811,
-          "duration" : 8723
+          "start" : 1630287890282,
+          "stop" : 1630287899127,
+          "duration" : 8845
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b41aa442cf4f6b149ceeb4bb26a63009"
+      "uid" : "33d4d8b12ec73da181d97cebd7396842"
     }, {
       "name" : "验证 参训/达标走势图  是否正确返回",
       "children" : [ {
         "name" : "test_charts",
-        "uid" : "d14af0bad7b6fb8c",
-        "parentUid" : "e7933dd7c9b69c61bdefc610783f6906",
+        "uid" : "32a2323a575d6b3b",
+        "parentUid" : "9746ac543e512701b26d7fe6b5955f2f",
         "status" : "passed",
         "time" : {
-          "start" : 1629797717815,
-          "stop" : 1629797746906,
-          "duration" : 29091
+          "start" : 1630287899129,
+          "stop" : 1630287928419,
+          "duration" : 29290
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e7933dd7c9b69c61bdefc610783f6906"
+      "uid" : "9746ac543e512701b26d7fe6b5955f2f"
     }, {
       "name" : "验证 各类达标情况  是否正确返回",
       "children" : [ {
         "name" : "test_kinds_standards",
-        "uid" : "3502c260a5fb443f",
-        "parentUid" : "c68d2e944845e492114d6fca871e9348",
+        "uid" : "459d14c0554de645",
+        "parentUid" : "374c2b457111eed0e39cc4672ebcc534",
         "status" : "failed",
         "time" : {
-          "start" : 1629797746910,
-          "stop" : 1629797755524,
-          "duration" : 8614
+          "start" : 1630287928422,
+          "stop" : 1630287937138,
+          "duration" : 8716
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c68d2e944845e492114d6fca871e9348"
+      "uid" : "374c2b457111eed0e39cc4672ebcc534"
     } ],
-    "uid" : "f51c4d5aa35529306990a1b6bf2385fb"
+    "uid" : "d0175998cec01851ac67449992cf8592"
   }, {
-    "name" : "首页-学员详情",
+    "name" : "02 首页-学员详情",
     "children" : [ {
       "name" : "验证 查询功能",
       "children" : [ {
         "name" : "test_student_details",
-        "uid" : "6ddd01e9d2c7628c",
-        "parentUid" : "2c3cd703d9ff507784b3006caaf9e2f4",
+        "uid" : "48d07dff9146821b",
+        "parentUid" : "bda756185090ea0c37c9e8178d2090e3",
         "status" : "passed",
         "time" : {
-          "start" : 1629797755572,
-          "stop" : 1629797806731,
-          "duration" : 51159
+          "start" : 1630287937187,
+          "stop" : 1630287992389,
+          "duration" : 55202
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "2c3cd703d9ff507784b3006caaf9e2f4"
+      "uid" : "bda756185090ea0c37c9e8178d2090e3"
     } ],
-    "uid" : "2b12acb2ab781c830af2d514c6e9f281"
+    "uid" : "0bdaf2a908ecda288d597cb078de3b52"
   }, {
-    "name" : "首页-公司数据",
+    "name" : "03 首页-公司数据",
     "children" : [ {
       "name" : "验证 公司数据",
       "children" : [ {
         "name" : "test_company_data",
-        "uid" : "e805726fce91f550",
-        "parentUid" : "8efc6a7d0852b2dc955abbbde8423250",
+        "uid" : "e5f0dd839ac2967a",
+        "parentUid" : "d18af6e1cae0ae462713c0bbf7844b3d",
         "status" : "passed",
         "time" : {
-          "start" : 1629797806736,
-          "stop" : 1629797827279,
-          "duration" : 20543
+          "start" : 1630287992392,
+          "stop" : 1630288014102,
+          "duration" : 21710
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8efc6a7d0852b2dc955abbbde8423250"
+      "uid" : "d18af6e1cae0ae462713c0bbf7844b3d"
     }, {
       "name" : "验证 汇总数据",
       "children" : [ {
         "name" : "test_tabulate_data",
-        "uid" : "ddc38caf8047d062",
-        "parentUid" : "18ad1e74271a9694889d0a336fd48555",
+        "uid" : "7d4a798eda5cafb3",
+        "parentUid" : "be4692fc3668d5db4b002bf29b86f34c",
         "status" : "passed",
         "time" : {
-          "start" : 1629797827284,
-          "stop" : 1629797835729,
-          "duration" : 8445
+          "start" : 1630288014105,
+          "stop" : 1630288022541,
+          "duration" : 8436
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "18ad1e74271a9694889d0a336fd48555"
+      "uid" : "be4692fc3668d5db4b002bf29b86f34c"
     } ],
-    "uid" : "0cbe7129fdef9f255b5af89275aba223"
+    "uid" : "201735120881ef27f48355d592090994"
   }, {
-    "name" : "培训计划报送",
+    "name" : "04 培训计划报送",
     "children" : [ {
       "name" : "验证 查询操作",
       "children" : [ {
         "name" : "test_submission",
-        "uid" : "1573d71c1cefbcbb",
-        "parentUid" : "59dc8e82e4b9859f9b514045bb6beecd",
+        "uid" : "2565fa387c9edaa6",
+        "parentUid" : "a7eb8a553bd680a31e931579f395f5eb",
         "status" : "passed",
         "time" : {
-          "start" : 1629797835733,
-          "stop" : 1629797924372,
-          "duration" : 88639
+          "start" : 1630288022544,
+          "stop" : 1630288113312,
+          "duration" : 90768
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "59dc8e82e4b9859f9b514045bb6beecd"
+      "uid" : "a7eb8a553bd680a31e931579f395f5eb"
     } ],
-    "uid" : "ed7053fea79bada222b79e92356aa8a4"
+    "uid" : "5f31dcdc55997d408d74be387142fa50"
   }, {
-    "name" : "培训学分",
+    "name" : "test_inquire",
+    "uid" : "afbf91450a02bf6c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1630288113314,
+      "stop" : 1630288113314,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : " 05 培训学分",
     "children" : [ {
-      "name" : "验证 查询操作",
+      "name" : "验证 操作",
       "children" : [ {
-        "name" : "test_inquire",
-        "uid" : "95e7dd7d9672ca05",
-        "parentUid" : "e3e01470338b25d75cc6db395c13d854",
+        "name" : "test_operation",
+        "uid" : "2d7d953d8a66df85",
+        "parentUid" : "c6d6d24fccd87843e00fae169b42f6f6",
         "status" : "passed",
         "time" : {
-          "start" : 1629797924377,
-          "stop" : 1629798058971,
-          "duration" : 134594
+          "start" : 1630288113317,
+          "stop" : 1630288166987,
+          "duration" : 53670
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e3e01470338b25d75cc6db395c13d854"
+      "uid" : "c6d6d24fccd87843e00fae169b42f6f6"
     } ],
-    "uid" : "403a80e78070d19aed2dcac7efdaafb7"
+    "uid" : "60c0440675b1e890cfa4e2060e10a7d0"
   } ]
 }

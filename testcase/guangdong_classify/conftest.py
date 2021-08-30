@@ -6,6 +6,9 @@ from tools.Base import *
 import os
 from tools.Yaml_read import Yaml_read
 from config.Conf import *
+from PIL import ImageGrab
+import numpy as np
+import cv2
 
 @pytest.fixture(scope="session",autouse=True)
 def driver():
@@ -23,7 +26,6 @@ def driver():
             os.remove(get_file_path_photo()+os.sep+"{}".format(one_1))
     except:
         print("\n>>没有可删除的文件>>")
-
     #登录
     login=Yaml_read("all.yaml","login")
     #窗口是否可见；False 可见；True 不可见

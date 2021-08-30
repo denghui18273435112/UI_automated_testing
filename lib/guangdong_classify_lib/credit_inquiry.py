@@ -9,9 +9,8 @@ from tools.Allure import alluer
 from tools.logUtil import my_log
 from tools.selenium import selenium
 import time
-
 class credit_inquiry:
-    def __init__(self,driver,Data):
+    def     __init__(self,driver,Data):
         self.driver = selenium(driver)
         self.data = Data["data"]
         self.Data = Data
@@ -53,7 +52,30 @@ class credit_inquiry:
 
         #截图/校验部分/用于判断用例是否通过/定位不到抛异常
         except BaseException as error:
-            self.Data["actual_result"] = self.Data["location_fail_hint"]+error
+            self.Data["actual_result"] = self.Data["location_fail_hint"]
         self.driver.screenShots()
         alluer(self.Data)
         return self.Data["actual_result"]
+
+    def operation(self):
+        """
+        培训学分查询-操作
+        :return:
+        """
+        try:
+            self.driver.click("查询",type="starts-with")
+            time.sleep(10)
+            self.driver.click("重置",type="starts-with")
+            time.sleep(10)
+            self.driver.click("导出",type="starts-with")
+            time.sleep(10)
+            #self.driver.input_text("//*/span[starts-with(.,\"前往\")]//input",10,type="xpath",Enter=0)
+            self.driver.text_input("//*/span[starts-with(.,\"前往\")]//input",10)
+            time.sleep(10)
+        #截图/校验部分/用于判断用例是否通过/定位不到抛异常
+        except BaseException as error:
+            self.Data["actual_result"] = self.Data["location_fail_hint"]
+        self.driver.screenShots()
+        alluer(self.Data)
+        return self.Data["actual_result"]
+

@@ -45,7 +45,7 @@ login:
 #数字概览
 overview_digital:
     test_id: "test_overview_digital_001"
-    module: "首页-数字概览"
+    module: "01 首页-数字概览"
     name: "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确"
     priority: "高"
     URL: "PracticeCMS/Home"
@@ -58,7 +58,7 @@ overview_digital:
 #参训达标走势图
 charts:
     test_id: "test_charts_002"
-    module: "首页-数字概览"
+    module: "01 首页-数字概览"
     name: "验证 参训/达标走势图  是否正确返回"
     priority: "高"
     URL: "PracticeCMS/Home"
@@ -71,7 +71,7 @@ charts:
 #各类达标情况
 kinds_standards:
     test_id: "test_kinds_standards_003"
-    module: "首页-数字概览"
+    module: "01 首页-数字概览"
     name: "验证 各类达标情况  是否正确返回"
     priority: "高"
     URL: "PracticeCMS/Home"
@@ -84,7 +84,7 @@ kinds_standards:
 #学员详情
 student_details:
     test_id: "test_student_details_003"
-    module:  "首页-学员详情"
+    module:  "02 首页-学员详情"
     name:  "验证 查询功能"
     priority: "高"
     URL:  "PracticeCMS/Home"
@@ -97,7 +97,7 @@ student_details:
 #公司数据
 company_data:
     test_id: "test_company_data_003"
-    module:  "首页-公司数据"
+    module:  "03 首页-公司数据"
     name:  "验证 公司数据"
     priority: "高"
     URL:  "PracticeCMS/Home"
@@ -110,7 +110,7 @@ company_data:
 #汇总数据
 tabulate_data:
     test_id: "test_tabulate_data_003"
-    module:  "首页-公司数据"
+    module:  "03 首页-公司数据"
     name:  "验证 汇总数据"
     priority: "高"
     URL:  "PracticeCMS/Home"
@@ -123,7 +123,7 @@ tabulate_data:
 #培训计划报送
 submission_inquire:
     test_id: "test_tabulate_data_003"
-    module:  "培训计划报送"
+    module:  "04 培训计划报送"
     name:  "验证 查询操作"
     priority: "高"
     URL:  "PracticeCMS/PlanSubmit"
@@ -136,8 +136,21 @@ submission_inquire:
 #培训学分查询
 inquire:
     test_id: "test_inquire_003"
-    module:  "培训学分"
+    module:  " 05 培训学分"
     name:  "验证 查询操作"
+    priority: "高"
+    URL:  "PracticeCMS/CreditInquire"
+    preposition:
+    expected_result:
+    actual_result: True
+    assert_fail_hint:
+    location_fail_hint: "定位过程中出现元素丢失。原因:"
+    data:
+#培训学分模块-操作
+operation:
+    test_id: "test_operation_005"
+    module:  " 05 培训学分"
+    name:  "验证 操作"
     priority: "高"
     URL:  "PracticeCMS/CreditInquire"
     preposition:

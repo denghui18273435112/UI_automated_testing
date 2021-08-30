@@ -208,7 +208,7 @@ class selenium(object):
         :return:
         """
         self.driver.implicitly_wait(10)
-        time.sleep(2)
+        time.sleep(3)
         self.driver.find_element_by_css_selector(location).click()
         self.driver.find_element_by_css_selector(location).clear()
         self.driver.find_element_by_css_selector(location).send_keys(content)
@@ -218,7 +218,7 @@ class selenium(object):
         time.sleep(3)
 
 
-    def input_text(self, location, content,fushu=None, Enter=None):
+    def input_text(self, location, content,fushu=None, Enter=None,type=None):
         """
         文本输入
        @param location: 文本定位
@@ -234,6 +234,8 @@ class selenium(object):
                 new_driver = self.driver.find_element_by_css_selector(location)
             elif location.isalpha() == True:
                 new_driver = self.driver.find_element_by_id(location)
+            elif type =="xpath":
+                new_driver = self.driver.find_element_by_xpath(location)
             new_driver.click()
             new_driver.clear()
             new_driver.send_keys(content)
@@ -416,8 +418,6 @@ class selenium(object):
         if shuxing =="id":
             self.driver.execute_script('document.getElementById({0}).{1}'.format(id,zhi))
 
-
-
     def quit_iframe(self):
         """
         退出iframe嵌套网页 【常用之一】
@@ -517,6 +517,10 @@ class selenium(object):
         :param location: 定位 ；支持方式:xpthon、id、css
         :return:
         """
+        if type =="starts-with":
+            self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location))
+        if type == "contains_text":
+            self.driver.find_element_by_xpath("//*/span[contains(text(),\"{}\")]".format(location))
         if "/" in location or "//" in location or "*" in location:
             self.driver.find_element_by_xpath(location).click()
         elif '\u4e00' <= location <= '\u9fff' and type=="css":
@@ -529,7 +533,6 @@ class selenium(object):
             self.driver.find_element_by_css_selector(location).click()
         time.sleep(2)
         self.driver.implicitly_wait(10)
-
 
     def pullDown_frame(self,location,option_name,label_name="li",matching_mode=True,joint=True):
         """
@@ -550,21 +553,28 @@ class selenium(object):
         else:
                 self.driver.find_element_by_xpath(option_name).click()
 
-    def text_input(self,location,content,Enter=False,empty=False):
+    def text_input(self,location,content,Enter=True,empty=True,type="xpath"):
         """
-        文本输入  【常用之一】
-        :param location: 定位;支持两种定位方式 id  css
+        文本输入
+        :param location: 定位
         :param content: 输入内容
         :param Enter:  文本框回车
         :param empty:  清空文本框中数据
+        :param type:  定位的类型
         :return:
         """
-        if location.isalpha() == True:
+        if type == "id":
             text_frame = self.driver.find_elements_by_id(location)
-        elif ">" in location or "#" in location:
+        elif type == "css":
             text_frame = self.driver.find_element_by_css_selector(location)
+        elif type == "xpath":
+            text_frame = self.driver.find_element_by_xpath(location)
+        elif type == "xpath_starts_with":
+            text_frame = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location))
+        elif type == "xpath_contains_text":
+            text_frame = self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location))
         text_frame.click()
-        if empty ==True:
+        if empty == True:
             text_frame.clear()
         text_frame.send_keys(content)
         if  Enter == True:
