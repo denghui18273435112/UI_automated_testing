@@ -23,6 +23,7 @@ class selenium(object):
         :param driver:
         """
         self.driver= driver
+        time.sleep(1)
 
     def back(self):
         """
@@ -141,10 +142,14 @@ class selenium(object):
         self.driver.find_element_by_css_selector(location1).click()
         self.driver.implicitly_wait(30)
         time.sleep(2)
-        if type=="CSS_CSS":
+        if type == "CSS_CSS":
             self.driver.find_element_by_css_selector(location2).click()
-        if type=="CSS_XPATH":
+        if type == "CSS_XPATH":
             self.driver.find_element_by_xpath(location2).click()
+        if type == "xpath_starts_with":
+            self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location2))
+        if type == "xpath_contains_text":
+            self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location2))
         time.sleep(3)
         self.driver.implicitly_wait(30)
 
@@ -216,7 +221,6 @@ class selenium(object):
             self.driver.find_element_by_css_selector(location).send_keys(Keys.ENTER)
         self.driver.implicitly_wait(10)
         time.sleep(3)
-
 
     def input_text(self, location, content,fushu=None, Enter=None,type=None):
         """
@@ -630,3 +634,34 @@ class selenium(object):
         win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, get_file_path()+os.sep+photo)  # 发送文件路径
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)  # 点击打开按钮
         time.sleep(1)
+
+#针对项目进行的封装
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    def zzl_company_inquire(self, content, location="input[placeholder=\"请选择所属机构\"]"):
+        """
+        保险机构字段查询
+        :param location:
+        :param content:
+        :return:
+        """
+        self.driver.implicitly_wait(100)
+        time.sleep(2)
+        self.driver.find_element_by_css_selector(location).click()
+        self.driver.find_element_by_css_selector(location).clear()
+        self.driver.find_element_by_css_selector(location).send_keys(content)
+        self.driver.implicitly_wait(100)
+        time.sleep(2)
+        self.driver.find_element_by_css_selector("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)").click()
+
+    def zzl_pull_down_inquire(self,location1,location2):
+        """
+        下拉框筛选
+        :param location1:
+        :param location2:
+        :return:
+        """
+        time.sleep(3)
+        self.driver.find_element_by_css_selector("div div:nth-child({})>div.el-select>div>span".format(location1)).click()
+        time.sleep(3)
+        self.driver.find_element_by_xpath("//ul/li/span[contains(text(),\"{}\")]".format(location2)).click()
+        time.sleep(3)

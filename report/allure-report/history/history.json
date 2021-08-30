@@ -9,7 +9,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7d4a798eda5cafb3",
+      "uid" : "4388b0a6ba007369",
       "status" : "passed",
       "time" : {
         "start" : 1630288014105,
@@ -28,13 +28,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "459d14c0554de645",
+      "uid" : "ccea232d8c638d2a",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert True == '各类达标情况总参训相加 不等于 总已参训人数'",
       "time" : {
         "start" : 1630287928422,
         "stop" : 1630287937138,
         "duration" : 8716
+      }
+    } ]
+  },
+  "525f43fb2590825305d6384adb2c05ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "66a0e5d0ba38178d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1630290953786,
+        "stop" : 1630290953786,
+        "duration" : 0
       }
     } ]
   },
@@ -48,31 +68,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e5f0dd839ac2967a",
+      "uid" : "fb5bb1c501746350",
       "status" : "passed",
       "time" : {
         "start" : 1630287992392,
         "stop" : 1630288014102,
         "duration" : 21710
-      }
-    } ]
-  },
-  "f24a6a381151ad5b322978b159c17e8b" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "48d07dff9146821b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1630287937187,
-        "stop" : 1630287992389,
-        "duration" : 55202
       }
     } ]
   },
@@ -86,13 +87,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "afbf91450a02bf6c",
+      "uid" : "8ddd991816ff23b6",
       "status" : "skipped",
       "statusDetails" : "Skipped: unconditional skip",
       "time" : {
         "start" : 1630288113314,
         "stop" : 1630288113314,
         "duration" : 0
+      }
+    } ]
+  },
+  "f24a6a381151ad5b322978b159c17e8b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd0409a3f0edf23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630287937187,
+        "stop" : 1630287992389,
+        "duration" : 55202
       }
     } ]
   },
@@ -106,31 +126,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2d7d953d8a66df85",
+      "uid" : "61a8bc081c7e10ce",
       "status" : "passed",
       "time" : {
         "start" : 1630288113317,
         "stop" : 1630288166987,
         "duration" : 53670
-      }
-    } ]
-  },
-  "0c3ef700a41d97a758f4a0d165befa12" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "2565fa387c9edaa6",
-      "status" : "passed",
-      "time" : {
-        "start" : 1630288022544,
-        "stop" : 1630288113312,
-        "duration" : 90768
       }
     } ]
   },
@@ -144,12 +145,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "32a2323a575d6b3b",
+      "uid" : "ea8b4ed0becd8a43",
       "status" : "passed",
       "time" : {
         "start" : 1630287899129,
         "stop" : 1630287928419,
         "duration" : 29290
+      }
+    } ]
+  },
+  "0c3ef700a41d97a758f4a0d165befa12" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4dcef58e9f7450b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630288022544,
+        "stop" : 1630288113312,
+        "duration" : 90768
       }
     } ]
   },
@@ -163,7 +183,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4330c42507187f92",
+      "uid" : "c58142ac70be8a0c",
       "status" : "passed",
       "time" : {
         "start" : 1630287890282,

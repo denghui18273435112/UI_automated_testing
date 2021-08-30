@@ -7,7 +7,7 @@
       "name" : "AssertionError: assert True == '各类达标情况总参训相加 不等于 总已参训人数'",
       "children" : [ {
         "name" : "test_kinds_standards",
-        "uid" : "459d14c0554de645",
+        "uid" : "ccea232d8c638d2a",
         "parentUid" : "f3dd5e6ff0e48683b113800e878181c0",
         "status" : "failed",
         "time" : {

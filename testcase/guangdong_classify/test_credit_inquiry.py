@@ -8,13 +8,26 @@ import pytest
 from lib.guangdong_classify_lib.credit_inquiry import credit_inquiry
 from tools.Yaml_read import Yaml_read
 class Test_credit_inquiry(object):
-    @pytest.mark.skip
+    """
+    培训学分查询
+    """
+    #@pytest.mark.skip
     @pytest.mark.run(order=8)
     def test_inquire(self,driver):
+        """
+        培训学分查询
+        :param driver:
+        :return:
+        """
         assert_result = credit_inquiry(driver,Yaml_read("all.yaml","inquire")).inquire()
         assert True ==assert_result
     #@pytest.mark.skip
     @pytest.mark.run(order=9)
     def test_operation(self,driver):
+        """
+        培训学分查询-操作
+        :param driver:
+        :return:
+        """
         assert_result = credit_inquiry(driver,Yaml_read("all.yaml","operation")).operation()
         assert True ==assert_result

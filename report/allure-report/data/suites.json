@@ -9,7 +9,7 @@
         "name" : "Test_home",
         "children" : [ {
           "name" : "test_overview_digital",
-          "uid" : "4330c42507187f92",
+          "uid" : "c58142ac70be8a0c",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
@@ -21,7 +21,7 @@
           "parameters" : [ ]
         }, {
           "name" : "test_charts",
-          "uid" : "32a2323a575d6b3b",
+          "uid" : "ea8b4ed0becd8a43",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
@@ -33,7 +33,7 @@
           "parameters" : [ ]
         }, {
           "name" : "test_kinds_standards",
-          "uid" : "459d14c0554de645",
+          "uid" : "ccea232d8c638d2a",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "failed",
           "time" : {
@@ -45,7 +45,7 @@
           "parameters" : [ ]
         }, {
           "name" : "test_student_details",
-          "uid" : "48d07dff9146821b",
+          "uid" : "cd0409a3f0edf23",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
@@ -57,7 +57,7 @@
           "parameters" : [ ]
         }, {
           "name" : "test_company_data",
-          "uid" : "e5f0dd839ac2967a",
+          "uid" : "fb5bb1c501746350",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
@@ -69,7 +69,7 @@
           "parameters" : [ ]
         }, {
           "name" : "test_tabulate_data",
-          "uid" : "7d4a798eda5cafb3",
+          "uid" : "4388b0a6ba007369",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
@@ -89,7 +89,7 @@
         "name" : "Test_submission",
         "children" : [ {
           "name" : "test_submission",
-          "uid" : "2565fa387c9edaa6",
+          "uid" : "b4dcef58e9f7450b",
           "parentUid" : "9c1803d29c5d2c3f9483e545f4bd4327",
           "status" : "passed",
           "time" : {
@@ -109,7 +109,7 @@
         "name" : "Test_credit_inquiry",
         "children" : [ {
           "name" : "test_inquire",
-          "uid" : "afbf91450a02bf6c",
+          "uid" : "8ddd991816ff23b6",
           "parentUid" : "b7d192f72a4804d5e574344ada32be66",
           "status" : "skipped",
           "time" : {
@@ -121,7 +121,7 @@
           "parameters" : [ ]
         }, {
           "name" : "test_operation",
-          "uid" : "2d7d953d8a66df85",
+          "uid" : "61a8bc081c7e10ce",
           "parentUid" : "b7d192f72a4804d5e574344ada32be66",
           "status" : "passed",
           "time" : {
@@ -135,6 +135,26 @@
         "uid" : "b7d192f72a4804d5e574344ada32be66"
       } ],
       "uid" : "f01e62cb6d453ea2135169438b818dcf"
+    }, {
+      "name" : "test_query_inquire",
+      "children" : [ {
+        "name" : "Test_query_inquire",
+        "children" : [ {
+          "name" : "test_query_inquire",
+          "uid" : "66a0e5d0ba38178d",
+          "parentUid" : "64f60c0b1d84fd9a2ffa8da8e6f1b19f",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1630290953786,
+            "stop" : 1630290953786,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "64f60c0b1d84fd9a2ffa8da8e6f1b19f"
+      } ],
+      "uid" : "8d996435a29885f92eda69223ba407a5"
     } ],
     "uid" : "8efcf4d9d4b5d4698b52dda72761e948"
   } ]

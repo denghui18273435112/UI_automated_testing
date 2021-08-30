@@ -7,7 +7,7 @@
       "name" : "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确",
       "children" : [ {
         "name" : "test_overview_digital",
-        "uid" : "4330c42507187f92",
+        "uid" : "c58142ac70be8a0c",
         "parentUid" : "33d4d8b12ec73da181d97cebd7396842",
         "status" : "passed",
         "time" : {
@@ -23,7 +23,7 @@
       "name" : "验证 参训/达标走势图  是否正确返回",
       "children" : [ {
         "name" : "test_charts",
-        "uid" : "32a2323a575d6b3b",
+        "uid" : "ea8b4ed0becd8a43",
         "parentUid" : "9746ac543e512701b26d7fe6b5955f2f",
         "status" : "passed",
         "time" : {
@@ -39,7 +39,7 @@
       "name" : "验证 各类达标情况  是否正确返回",
       "children" : [ {
         "name" : "test_kinds_standards",
-        "uid" : "459d14c0554de645",
+        "uid" : "ccea232d8c638d2a",
         "parentUid" : "374c2b457111eed0e39cc4672ebcc534",
         "status" : "failed",
         "time" : {
@@ -59,7 +59,7 @@
       "name" : "验证 查询功能",
       "children" : [ {
         "name" : "test_student_details",
-        "uid" : "48d07dff9146821b",
+        "uid" : "cd0409a3f0edf23",
         "parentUid" : "bda756185090ea0c37c9e8178d2090e3",
         "status" : "passed",
         "time" : {
@@ -79,7 +79,7 @@
       "name" : "验证 公司数据",
       "children" : [ {
         "name" : "test_company_data",
-        "uid" : "e5f0dd839ac2967a",
+        "uid" : "fb5bb1c501746350",
         "parentUid" : "d18af6e1cae0ae462713c0bbf7844b3d",
         "status" : "passed",
         "time" : {
@@ -95,7 +95,7 @@
       "name" : "验证 汇总数据",
       "children" : [ {
         "name" : "test_tabulate_data",
-        "uid" : "7d4a798eda5cafb3",
+        "uid" : "4388b0a6ba007369",
         "parentUid" : "be4692fc3668d5db4b002bf29b86f34c",
         "status" : "passed",
         "time" : {
@@ -115,7 +115,7 @@
       "name" : "验证 查询操作",
       "children" : [ {
         "name" : "test_submission",
-        "uid" : "2565fa387c9edaa6",
+        "uid" : "b4dcef58e9f7450b",
         "parentUid" : "a7eb8a553bd680a31e931579f395f5eb",
         "status" : "passed",
         "time" : {
@@ -131,7 +131,7 @@
     "uid" : "5f31dcdc55997d408d74be387142fa50"
   }, {
     "name" : "test_inquire",
-    "uid" : "afbf91450a02bf6c",
+    "uid" : "8ddd991816ff23b6",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
@@ -147,7 +147,7 @@
       "name" : "验证 操作",
       "children" : [ {
         "name" : "test_operation",
-        "uid" : "2d7d953d8a66df85",
+        "uid" : "61a8bc081c7e10ce",
         "parentUid" : "c6d6d24fccd87843e00fae169b42f6f6",
         "status" : "passed",
         "time" : {
@@ -161,5 +161,17 @@
       "uid" : "c6d6d24fccd87843e00fae169b42f6f6"
     } ],
     "uid" : "60c0440675b1e890cfa4e2060e10a7d0"
+  }, {
+    "name" : "test_query_inquire",
+    "uid" : "66a0e5d0ba38178d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1630290953786,
+      "stop" : 1630290953786,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
   } ]
 }
