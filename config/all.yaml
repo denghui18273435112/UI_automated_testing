@@ -24,7 +24,7 @@
 #    location_fail_hint: "定位过程中出现元素丢失。原因:"
 #    data:
 ---
-#线上登录
+#线上登录 sxpx10 省公司  gd-sxxh-002 协会
 login:
   url: "https://platform.giiatop.com/cip/#/login"
   login_account: "gd-sxxh-002"
@@ -166,6 +166,19 @@ query_inquire:
     name:  "验证 操作"
     priority: "高"
     URL:  "PracticeCMS/RecordInquire"
+    preposition:
+    expected_result:
+    actual_result: True
+    assert_fail_hint:
+    location_fail_hint: "定位过程中出现元素丢失。原因:"
+    data:
+#培训记录统计模块
+record_statistical_query_inquire:
+    test_id: "test_record_statistical_query_inquire_005"
+    module:  " 05 培训记录统计查询"
+    name:  "验证 操作"
+    priority: "高"
+    URL:  "PracticeCMS/RecordStatistics"
     preposition:
     expected_result:
     actual_result: True

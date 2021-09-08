@@ -1,14 +1,33 @@
+import time
+
+import imageio
 import pytest
 from selenium import webdriver
-from selenium.webdriver import ChromeOptions
-from tools.selenium import selenium
-from tools.Base import *
-import os
-from tools.Yaml_read import Yaml_read
+
 from config.Conf import *
-from PIL import ImageGrab
-import numpy as np
-import cv2
+from tools.Base import *
+from tools.Yaml_read import Yaml_read
+from tools.selenium import selenium
+
+
+def clear_dir(path):
+    """创建或清空目录"""
+    if not os.path.isdir(path):
+        os.mkdir(path)  # 创建目录
+    else:  # 清空目录
+        [os.remove(os.path.join(path, file_name)) for file_name in os.listdir(path)]
+
+def shot(dr, img_dir):
+    """循环截图函数"""
+    i = 0
+    clear_dir(img_dir)  # 清空目录
+    while True:
+        img_file = os.path.join(img_dir, '{0}.png'.format(i))
+        try:
+            dr.save_screenshot(img_file)
+        except:
+            return
+        i += 1
 
 @pytest.fixture(scope="session",autouse=True)
 def driver():
@@ -29,12 +48,12 @@ def driver():
     #登录
     login=Yaml_read("all.yaml","login")
     #窗口是否可见；False 可见；True 不可见
-    option = ChromeOptions()
-    option.headless =False
-    option.add_argument('window-size=1920x1080')
-    driver = webdriver.Chrome(options=option)
+    # option = ChromeOptions()
+    # option.headless =False
+    # option.add_argument('window-size=1920x1080')
+    # driver = webdriver.Chrome(options=option)
     #窗口可见
-    #driver = webdriver.Chrome()
+    driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get(login["url"])
     selenium(driver).input_text("请输入账号",login["login_account"])
@@ -50,3 +69,13 @@ def driver():
             break
     yield driver
     driver.quit()
+
+    #截图进行拼接生成gif
+    image_list=[]
+    for one in os.listdir(photo):
+        image_list.append(photo+os.sep+"/{}".format(one))
+    gif_name = BASE_DIR+'\\自动化拼接.gif'
+    frames = []
+    for image_name in image_list:
+        frames.append(imageio.imread(image_name))
+    imageio.mimsave(gif_name, frames, 'GIF', duration=0.8)

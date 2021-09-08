@@ -1,19 +1,14 @@
 # coding=utf-8
-from config.Conf import ConfigYaml
-import json
-import  re
-from tools.AssertUitl import AssertUitl
+import os
 import subprocess
+from datetime import  datetime
+
 from config import Conf
 from config.Conf import *
-import os
-import datetime
-import time
-from datetime import  datetime
-from tools.MysqlUitl import Verify_database_data
 from tools.Allure import alluer
+from tools.AssertUitl import AssertUitl
 from tools.MysqlUitl import Mysql
-
+from tools.MysqlUitl import Verify_database_data
 
 
 def init_db(db_alias='db_1'):
@@ -88,15 +83,15 @@ def assert_db(db_name,result,db_verify):
 
 def report_path(run_type):
     if run_type =="本地":
-        return  Conf.get_report_path()+os.sep+"result"
+        return Conf.get_report_path() + os.sep + "result"
     if run_type =="jenkins":
-        return  Conf.get_report_path()+os.sep+"result"
+        return Conf.get_report_path() + os.sep + "result"
 
 def report_html_path(run_type):
     if run_type =="本地":
-        return Conf.get_report_path()+os.sep+"allure-report"
+        return Conf.get_report_path() + os.sep + "allure-report"
     if run_type =="jenkins":
-        return Conf.get_report_path()+os.sep+"allure-report"
+        return Conf.get_report_path() + os.sep + "allure-report"
 
 
 def result_path():

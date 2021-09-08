@@ -4,9 +4,12 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
-from tools.selenium import selenium
-from tools.Base import Judgment_Reporting
 import time
+
+from tools.Base import Judgment_Reporting
+from tools.selenium import selenium
+
+
 class product:
 
     def __init__(self,driver,Data):

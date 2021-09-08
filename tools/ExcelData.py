@@ -1,9 +1,9 @@
-import os
+import  json
+
 import xlrd
 from xlutils.copy import copy
-import  json
-from config.Conf import *
-import  pprint
+
+
 class get_ExcelData:
     """
     初始化中

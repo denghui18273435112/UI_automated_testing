@@ -1,5 +1,5 @@
 import pymysql
-from tools.logUtil import my_log
+
 from tools.Yaml_read import Yaml_read
 
 sql=Yaml_read("sql.yaml")

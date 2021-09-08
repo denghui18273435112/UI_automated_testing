@@ -7,6 +7,8 @@
 import pytest
 from lib.guangdong_classify_lib.credit_inquiry import credit_inquiry
 from tools.Yaml_read import Yaml_read
+
+
 class Test_credit_inquiry(object):
     """
     培训学分查询

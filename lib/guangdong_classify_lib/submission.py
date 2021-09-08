@@ -4,21 +4,25 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
+import time
 from tools.Allure import alluer
 from tools.logUtil import my_log
 from tools.selenium import selenium
-import time
+
+
 class submission:
     def __init__(self,driver,Data):
         self.driver = selenium(driver)
         self.data = Data["data"]
         self.Data = Data
         self.driver.url_skip(self.Data["URL"])
+        self.driver.screenShots()
+        time.sleep(5)
         my_log().debug("["+self.Data["test_id"]+"--"+self.Data["module"]+"--"+self.Data["name"]+"]")
 
     def submission_inquire(self):
         """
-        培训计划报送
+        培训计划报送 -查询操作
         :return:
         """
         try:

@@ -1,8 +1,11 @@
-import win32gui
-import win32con
-from config.Conf import get_file_path
 import os
 import time
+import win32gui
+
+import win32con
+
+from config.Conf import get_file_path
+
 
 def upload_files(filePath, browser_type="chrome"):
         '''

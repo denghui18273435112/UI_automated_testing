@@ -9,73 +9,73 @@
         "name" : "Test_home",
         "children" : [ {
           "name" : "test_overview_digital",
-          "uid" : "c58142ac70be8a0c",
+          "uid" : "5ab8808117af697a",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
-            "start" : 1630287890282,
-            "stop" : 1630287899127,
-            "duration" : 8845
+            "start" : 1631115380365,
+            "stop" : 1631115395422,
+            "duration" : 15057
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_charts",
-          "uid" : "ea8b4ed0becd8a43",
+          "uid" : "dfbcb5613a4005f1",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
-            "start" : 1630287899129,
-            "stop" : 1630287928419,
-            "duration" : 29290
+            "start" : 1631115395426,
+            "stop" : 1631115430931,
+            "duration" : 35505
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_kinds_standards",
-          "uid" : "ccea232d8c638d2a",
+          "uid" : "4f1b96facd40a8e8",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "failed",
           "time" : {
-            "start" : 1630287928422,
-            "stop" : 1630287937138,
-            "duration" : 8716
+            "start" : 1631115430936,
+            "stop" : 1631115445833,
+            "duration" : 14897
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_student_details",
-          "uid" : "cd0409a3f0edf23",
+          "uid" : "2647c3c20596b989",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
-            "start" : 1630287937187,
-            "stop" : 1630287992389,
-            "duration" : 55202
+            "start" : 1631115445885,
+            "stop" : 1631115507135,
+            "duration" : 61250
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_company_data",
-          "uid" : "fb5bb1c501746350",
+          "uid" : "2dbeb4364985eff2",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
-            "start" : 1630287992392,
-            "stop" : 1630288014102,
-            "duration" : 21710
+            "start" : 1631115507140,
+            "stop" : 1631115535189,
+            "duration" : 28049
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_tabulate_data",
-          "uid" : "4388b0a6ba007369",
+          "uid" : "eb39ab5690ef757",
           "parentUid" : "e63688c8a977e3d349894adfc19a29be",
           "status" : "passed",
           "time" : {
-            "start" : 1630288014105,
-            "stop" : 1630288022541,
-            "duration" : 8436
+            "start" : 1631115535194,
+            "stop" : 1631115549876,
+            "duration" : 14682
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -89,13 +89,13 @@
         "name" : "Test_submission",
         "children" : [ {
           "name" : "test_submission",
-          "uid" : "b4dcef58e9f7450b",
+          "uid" : "e7008e4e9991cee",
           "parentUid" : "9c1803d29c5d2c3f9483e545f4bd4327",
           "status" : "passed",
           "time" : {
-            "start" : 1630288022544,
-            "stop" : 1630288113312,
-            "duration" : 90768
+            "start" : 1631115549881,
+            "stop" : 1631115647764,
+            "duration" : 97883
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -109,25 +109,25 @@
         "name" : "Test_credit_inquiry",
         "children" : [ {
           "name" : "test_inquire",
-          "uid" : "8ddd991816ff23b6",
+          "uid" : "37f9fffe399f602a",
           "parentUid" : "b7d192f72a4804d5e574344ada32be66",
-          "status" : "skipped",
+          "status" : "passed",
           "time" : {
-            "start" : 1630288113314,
-            "stop" : 1630288113314,
-            "duration" : 0
+            "start" : 1631115647768,
+            "stop" : 1631115792545,
+            "duration" : 144777
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_operation",
-          "uid" : "61a8bc081c7e10ce",
+          "uid" : "29cd447e6b41ce",
           "parentUid" : "b7d192f72a4804d5e574344ada32be66",
           "status" : "passed",
           "time" : {
-            "start" : 1630288113317,
-            "stop" : 1630288166987,
-            "duration" : 53670
+            "start" : 1631116006192,
+            "stop" : 1631116066046,
+            "duration" : 59854
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -141,13 +141,13 @@
         "name" : "Test_query_inquire",
         "children" : [ {
           "name" : "test_query_inquire",
-          "uid" : "66a0e5d0ba38178d",
+          "uid" : "1178e658bb6f0fcc",
           "parentUid" : "64f60c0b1d84fd9a2ffa8da8e6f1b19f",
-          "status" : "skipped",
+          "status" : "passed",
           "time" : {
-            "start" : 1630290953786,
-            "stop" : 1630290953786,
-            "duration" : 0
+            "start" : 1631115792549,
+            "stop" : 1631115904963,
+            "duration" : 112414
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -155,6 +155,26 @@
         "uid" : "64f60c0b1d84fd9a2ffa8da8e6f1b19f"
       } ],
       "uid" : "8d996435a29885f92eda69223ba407a5"
+    }, {
+      "name" : "test_record_statistical",
+      "children" : [ {
+        "name" : "Test_record_statistical",
+        "children" : [ {
+          "name" : "test_query_inquire",
+          "uid" : "3733f20416b8a7ea",
+          "parentUid" : "9e62061f848db16b85843b5987775ec2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631115904968,
+            "stop" : 1631116006188,
+            "duration" : 101220
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9e62061f848db16b85843b5987775ec2"
+      } ],
+      "uid" : "089d6ad06d49135a6a2a04c0e7e41621"
     } ],
     "uid" : "8efcf4d9d4b5d4698b52dda72761e948"
   } ]

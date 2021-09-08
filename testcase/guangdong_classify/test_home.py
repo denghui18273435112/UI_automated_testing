@@ -1,7 +1,7 @@
 import pytest
+
 from lib.guangdong_classify_lib.home import home
 from tools.Yaml_read import Yaml_read
-from tools.logUtil import my_log
 
 
 class Test_home(object):

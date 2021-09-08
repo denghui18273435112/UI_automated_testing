@@ -1,7 +1,8 @@
 import requests
-from tools.logUtil import my_log
-from pprint import pprint
-from config.Conf import ConfigYaml
+
+from config import ConfigYaml
+from tools import my_log
+
 
 #重构requests库中的post方法、get方法  使用中
 class Request:

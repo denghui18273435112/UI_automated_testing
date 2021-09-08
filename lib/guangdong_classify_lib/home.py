@@ -4,10 +4,11 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
+import time
 from tools.Allure import alluer
 from tools.logUtil import my_log
 from tools.selenium import selenium
-import time
+
 
 #模板
     # def kinds_standards(self):
@@ -30,6 +31,8 @@ class home:
         self.data = Data["data"]
         self.Data = Data
         self.driver.url_skip(self.Data["URL"])
+        self.driver.screenShots()
+        time.sleep(5)
         my_log().debug("["+self.Data["test_id"]+"--"+self.Data["module"]+"--"+self.Data["name"]+"]")
 
     def overview_digital(self):

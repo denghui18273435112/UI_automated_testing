@@ -1,4 +1,5 @@
 import os
+
 import tools.YamlUtil
 
 current =os.path.abspath(__file__)                          #当前文件的路径
@@ -12,6 +13,7 @@ _data_path =BASE_DIR +os.sep+"docs"                        #定义data文件的�
 _report_path =BASE_DIR +os.sep+"report"                        #定义report文件的路径
 _file_path =BASE_DIR +os.sep+"file"
 _file_path_photo =_file_path +os.sep+"photo"
+photo =_file_path +os.sep+"photo"
 
 def Yaml_document_location(Yaml_name):
     current =os.path.abspath(__file__)                          #当前文件的路径

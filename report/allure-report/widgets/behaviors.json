@@ -23,6 +23,17 @@
       "total" : 2
     }
   }, {
+    "uid" : "60c0440675b1e890cfa4e2060e10a7d0",
+    "name" : " 05 培训学分",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "0bdaf2a908ecda288d597cb078de3b52",
     "name" : "02 首页-学员详情",
     "statistic" : {
@@ -45,8 +56,19 @@
       "total" : 1
     }
   }, {
-    "uid" : "60c0440675b1e890cfa4e2060e10a7d0",
-    "name" : " 05 培训学分",
+    "uid" : "c289de0c0ba92c6bd1114450b0840bbd",
+    "name" : " 05 培训记录查询",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "283e7a7e8c6545aec086e943d5aa2c6b",
+    "name" : " 05 培训记录统计查询",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

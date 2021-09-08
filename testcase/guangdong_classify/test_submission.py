@@ -11,5 +11,10 @@ class Test_submission(object):
     #@pytest.mark.skip
     @pytest.mark.run(order=7)
     def test_submission(self,driver):
+        """
+        培训计划报送
+        :param driver:
+        :return:
+        """
         assert_result = submission(driver,Yaml_read("all.yaml","submission_inquire")).submission_inquire()
         assert True ==assert_result

@@ -4,11 +4,13 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
-from config.fixed_options import *
+import time
 from tools.Allure import alluer
 from tools.logUtil import my_log
 from tools.selenium import selenium
-import time
+from config.fixed_options import *
+
+
 class credit_inquiry:
     def     __init__(self,driver,Data):
         self.driver = selenium(driver)
@@ -16,6 +18,8 @@ class credit_inquiry:
         self.Data = Data
         self.driver.url_skip(self.Data["URL"])
         self.driver.resfresh()
+        self.driver.screenShots()
+        time.sleep(5)
         my_log().debug("["+self.Data["test_id"]+"--"+self.Data["module"]+"--"+self.Data["name"]+"]")
 
     def inquire(self):

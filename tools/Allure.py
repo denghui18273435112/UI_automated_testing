@@ -1,9 +1,8 @@
-from datetime import datetime
 import allure
-from config.Conf import *
-import  json
+
 from tools.Base import *
 from tools.Yaml_read import Yaml_read
+
 
 def alluer(inData):
         """

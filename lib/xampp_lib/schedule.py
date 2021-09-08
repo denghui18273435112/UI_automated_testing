@@ -4,9 +4,9 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
-from tools.selenium import selenium
-from tools.Allure import *
 from tools.Base import  Judgment_Reporting
+from tools.selenium import selenium
+
 
 class schedule:
 

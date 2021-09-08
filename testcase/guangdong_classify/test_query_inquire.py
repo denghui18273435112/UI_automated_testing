@@ -7,6 +7,8 @@
 import pytest
 from lib.guangdong_classify_lib.query_inquire import query_inquire
 from tools.Yaml_read import Yaml_read
+
+
 class Test_query_inquire(object):
     """
     培训记录查询模块
@@ -21,3 +23,4 @@ class Test_query_inquire(object):
         """
         assert_result = query_inquire(driver,Yaml_read("all.yaml","query_inquire")).query_inquire()
         assert True ==assert_result
+

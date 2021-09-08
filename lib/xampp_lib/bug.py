@@ -4,10 +4,11 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
-from tools.selenium import selenium
 import  time
-from tools.Base import  Judgment_Reporting
+
 from tools.Base import *
+from tools.selenium import selenium
+
 
 class bug:
     def __init__(self,driver,Data):

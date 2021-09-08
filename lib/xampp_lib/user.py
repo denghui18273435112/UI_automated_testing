@@ -4,13 +4,9 @@
 #@Author    :denghui
 #@Email     :314983713@qq.com
 #@Software  :PyCharm
-from tools.selenium import selenium
-import time
-from tools.Yaml_read import Yaml_read
-from tools.Allure import *
-from config.Conf import *
-from tools.MysqlUitl import *
 from tools.Base import  Judgment_Reporting
+from tools.selenium import selenium
+
 
 class user:
 
