@@ -1,33 +1,12 @@
 import time
-
 import imageio
 import pytest
 from selenium import webdriver
-
 from config.Conf import *
 from tools.Base import *
 from tools.Yaml_read import Yaml_read
 from tools.selenium import selenium
-
-
-def clear_dir(path):
-    """创建或清空目录"""
-    if not os.path.isdir(path):
-        os.mkdir(path)  # 创建目录
-    else:  # 清空目录
-        [os.remove(os.path.join(path, file_name)) for file_name in os.listdir(path)]
-
-def shot(dr, img_dir):
-    """循环截图函数"""
-    i = 0
-    clear_dir(img_dir)  # 清空目录
-    while True:
-        img_file = os.path.join(img_dir, '{0}.png'.format(i))
-        try:
-            dr.save_screenshot(img_file)
-        except:
-            return
-        i += 1
+import os
 
 @pytest.fixture(scope="session",autouse=True)
 def driver():
@@ -45,6 +24,7 @@ def driver():
             os.remove(get_file_path_photo()+os.sep+"{}".format(one_1))
     except:
         print("\n>>没有可删除的文件>>")
+    os.system("pip freeze > requirements.txt")
     #登录
     login=Yaml_read("all.yaml","login")
     #窗口是否可见；False 可见；True 不可见

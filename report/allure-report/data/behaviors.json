@@ -2,208 +2,136 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "01 首页-数字概览",
-    "children" : [ {
-      "name" : "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确",
-      "children" : [ {
-        "name" : "test_overview_digital",
-        "uid" : "5ab8808117af697a",
-        "parentUid" : "33d4d8b12ec73da181d97cebd7396842",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115380365,
-          "stop" : 1631115395422,
-          "duration" : 15057
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "33d4d8b12ec73da181d97cebd7396842"
-    }, {
-      "name" : "验证 参训/达标走势图  是否正确返回",
-      "children" : [ {
-        "name" : "test_charts",
-        "uid" : "dfbcb5613a4005f1",
-        "parentUid" : "9746ac543e512701b26d7fe6b5955f2f",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115395426,
-          "stop" : 1631115430931,
-          "duration" : 35505
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "9746ac543e512701b26d7fe6b5955f2f"
-    }, {
-      "name" : "验证 各类达标情况  是否正确返回",
-      "children" : [ {
-        "name" : "test_kinds_standards",
-        "uid" : "4f1b96facd40a8e8",
-        "parentUid" : "374c2b457111eed0e39cc4672ebcc534",
-        "status" : "failed",
-        "time" : {
-          "start" : 1631115430936,
-          "stop" : 1631115445833,
-          "duration" : 14897
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "374c2b457111eed0e39cc4672ebcc534"
-    } ],
-    "uid" : "d0175998cec01851ac67449992cf8592"
+    "name" : "test_overview_digital",
+    "uid" : "b92b0646f0364f72",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631144626946,
+      "stop" : 1631144626946,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   }, {
-    "name" : "02 首页-学员详情",
-    "children" : [ {
-      "name" : "验证 查询功能",
-      "children" : [ {
-        "name" : "test_student_details",
-        "uid" : "2647c3c20596b989",
-        "parentUid" : "bda756185090ea0c37c9e8178d2090e3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115445885,
-          "stop" : 1631115507135,
-          "duration" : 61250
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "bda756185090ea0c37c9e8178d2090e3"
-    } ],
-    "uid" : "0bdaf2a908ecda288d597cb078de3b52"
+    "name" : "test_charts",
+    "uid" : "75bf880dc15cb6e3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253000,
+      "stop" : 1631150253000,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   }, {
-    "name" : "03 首页-公司数据",
-    "children" : [ {
-      "name" : "验证 公司数据",
-      "children" : [ {
-        "name" : "test_company_data",
-        "uid" : "2dbeb4364985eff2",
-        "parentUid" : "d18af6e1cae0ae462713c0bbf7844b3d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115507140,
-          "stop" : 1631115535189,
-          "duration" : 28049
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d18af6e1cae0ae462713c0bbf7844b3d"
-    }, {
-      "name" : "验证 汇总数据",
-      "children" : [ {
-        "name" : "test_tabulate_data",
-        "uid" : "eb39ab5690ef757",
-        "parentUid" : "be4692fc3668d5db4b002bf29b86f34c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115535194,
-          "stop" : 1631115549876,
-          "duration" : 14682
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "be4692fc3668d5db4b002bf29b86f34c"
-    } ],
-    "uid" : "201735120881ef27f48355d592090994"
+    "name" : "test_kinds_standards",
+    "uid" : "f192de115e166910",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253070,
+      "stop" : 1631150253070,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   }, {
-    "name" : "04 培训计划报送",
-    "children" : [ {
-      "name" : "验证 查询操作",
-      "children" : [ {
-        "name" : "test_submission",
-        "uid" : "e7008e4e9991cee",
-        "parentUid" : "a7eb8a553bd680a31e931579f395f5eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115549881,
-          "stop" : 1631115647764,
-          "duration" : 97883
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a7eb8a553bd680a31e931579f395f5eb"
-    } ],
-    "uid" : "5f31dcdc55997d408d74be387142fa50"
+    "name" : "test_student_details",
+    "uid" : "9043ed379a84f47a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253151,
+      "stop" : 1631150253151,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   }, {
-    "name" : " 05 培训学分",
-    "children" : [ {
-      "name" : "验证 查询操作",
-      "children" : [ {
-        "name" : "test_inquire",
-        "uid" : "37f9fffe399f602a",
-        "parentUid" : "cc8eb92faf05759862c52068e9a7b6aa",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115647768,
-          "stop" : 1631115792545,
-          "duration" : 144777
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "cc8eb92faf05759862c52068e9a7b6aa"
-    }, {
-      "name" : "验证 操作",
-      "children" : [ {
-        "name" : "test_operation",
-        "uid" : "29cd447e6b41ce",
-        "parentUid" : "c6d6d24fccd87843e00fae169b42f6f6",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631116006192,
-          "stop" : 1631116066046,
-          "duration" : 59854
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "c6d6d24fccd87843e00fae169b42f6f6"
-    } ],
-    "uid" : "60c0440675b1e890cfa4e2060e10a7d0"
+    "name" : "test_company_data",
+    "uid" : "2992157aa81d8436",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253221,
+      "stop" : 1631150253221,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   }, {
-    "name" : " 05 培训记录查询",
-    "children" : [ {
-      "name" : "验证 操作",
-      "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "1178e658bb6f0fcc",
-        "parentUid" : "72974035360dc1855d8375763c6280a4",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115792549,
-          "stop" : 1631115904963,
-          "duration" : 112414
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "72974035360dc1855d8375763c6280a4"
-    } ],
-    "uid" : "c289de0c0ba92c6bd1114450b0840bbd"
+    "name" : "test_tabulate_data",
+    "uid" : "cd48768a34b88bb0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253294,
+      "stop" : 1631150253294,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   }, {
-    "name" : " 05 培训记录统计查询",
-    "children" : [ {
-      "name" : "验证 操作",
-      "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "3733f20416b8a7ea",
-        "parentUid" : "f8bf68782bc4d2975b2229fd738b9913",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631115904968,
-          "stop" : 1631116006188,
-          "duration" : 101220
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f8bf68782bc4d2975b2229fd738b9913"
-    } ],
-    "uid" : "283e7a7e8c6545aec086e943d5aa2c6b"
+    "name" : "test_submission",
+    "uid" : "a5e558c56a9cd4f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253366,
+      "stop" : 1631150253366,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_inquire",
+    "uid" : "a46fadbdd6da105",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253449,
+      "stop" : 1631150253449,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_query_inquire",
+    "uid" : "df9d2b015269614c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253525,
+      "stop" : 1631150253525,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_query_inquire",
+    "uid" : "e345d06369030a3c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253599,
+      "stop" : 1631150253599,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_operation",
+    "uid" : "24d20dc187cc2e3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1631150253670,
+      "stop" : 1631150253670,
+      "duration" : 0
+    },
+    "flaky" : true,
+    "parameters" : [ ]
   } ]
 }

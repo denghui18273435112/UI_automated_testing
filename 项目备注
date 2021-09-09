@@ -4,10 +4,7 @@
 
 如果chrome浏览器出现版本更新，请及时下载驱动
 下载地址：https://chromedriver.storage.googleapis.com/index.html
-
 浏览器的驱动文件存放位置 G:\python\selenium\webdriver
-
-
 
 项目代码工程创建
 config:配置包（存放yaml文件、固定的路径方法）
@@ -19,6 +16,8 @@ test_case:测试用例代码包（Pytest执行的目录，多个关联）
 Tools: 工具类、二次重构
 data:数据/用例文件夹
 
+导出第三方库
+pip freeze > requirements.txt
 
 
 

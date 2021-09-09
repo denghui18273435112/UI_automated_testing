@@ -2,24 +2,144 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Product defects",
+    "name" : "Test defects",
     "children" : [ {
-      "name" : "AssertionError: assert True == '各类达标情况总参训相加 不等于 总已参训人数'",
+      "name" : "selenium.common.exceptions.WebDriverException: Message: chrome not reachable\n  (Session info: chrome=93.0.4577.63)",
       "children" : [ {
-        "name" : "test_kinds_standards",
-        "uid" : "4f1b96facd40a8e8",
-        "parentUid" : "f3dd5e6ff0e48683b113800e878181c0",
-        "status" : "failed",
+        "name" : "test_overview_digital",
+        "uid" : "b92b0646f0364f72",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
         "time" : {
-          "start" : 1631115430936,
-          "stop" : 1631115445833,
-          "duration" : 14897
+          "start" : 1631144626946,
+          "stop" : 1631144626946,
+          "duration" : 0
         },
-        "flaky" : false,
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_charts",
+        "uid" : "75bf880dc15cb6e3",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253000,
+          "stop" : 1631150253000,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_kinds_standards",
+        "uid" : "f192de115e166910",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253070,
+          "stop" : 1631150253070,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_student_details",
+        "uid" : "9043ed379a84f47a",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253151,
+          "stop" : 1631150253151,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_company_data",
+        "uid" : "2992157aa81d8436",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253221,
+          "stop" : 1631150253221,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_tabulate_data",
+        "uid" : "cd48768a34b88bb0",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253294,
+          "stop" : 1631150253294,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_submission",
+        "uid" : "a5e558c56a9cd4f",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253366,
+          "stop" : 1631150253366,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_inquire",
+        "uid" : "a46fadbdd6da105",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253449,
+          "stop" : 1631150253449,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_query_inquire",
+        "uid" : "df9d2b015269614c",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253525,
+          "stop" : 1631150253525,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_query_inquire",
+        "uid" : "e345d06369030a3c",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253599,
+          "stop" : 1631150253599,
+          "duration" : 0
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_operation",
+        "uid" : "24d20dc187cc2e3",
+        "parentUid" : "ae28fea03f8a922d1f37212e34872d41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631150253670,
+          "stop" : 1631150253670,
+          "duration" : 0
+        },
+        "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "f3dd5e6ff0e48683b113800e878181c0"
+      "uid" : "ae28fea03f8a922d1f37212e34872d41"
     } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }

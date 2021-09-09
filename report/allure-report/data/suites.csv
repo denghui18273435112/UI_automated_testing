@@ -1,12 +1,32 @@
 "Status","Name","Duration in ms","Description"
-"passed","testcase.guangdong_classify.test_home.Test_home#test_overview_digital","15057","<font color='red'>当前执行时间: </font> 2021-09-08 23:36:35<Br/><font color='red'>用例编号: </font> test_overview_digital_001<Br/><font color='red'>模块: </font>01 首页-数字概览<Br/><font color='red'>标题_名称: </font>验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件: </font>成功登录<Br/><font color='red' >预期结果: </font>相关数据计算正确<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_home.Test_home#test_tabulate_data","14682","<font color='red'>当前执行时间: </font> 2021-09-08 23:39:09<Br/><font color='red'>用例编号: </font> test_tabulate_data_003<Br/><font color='red'>模块: </font>03 首页-公司数据<Br/><font color='red'>标题_名称: </font>验证 汇总数据<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_record_statistical.Test_record_statistical#test_query_inquire","101220","<font color='red'>当前执行时间: </font> 2021-09-08 23:46:46<Br/><font color='red'>用例编号: </font> test_record_statistical_query_inquire_005<Br/><font color='red'>模块: </font> 05 培训记录统计查询<Br/><font color='red'>标题_名称: </font>验证 操作<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/RecordStatistics<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_credit_inquiry.Test_credit_inquiry#test_inquire","144777","<font color='red'>当前执行时间: </font> 2021-09-08 23:43:12<Br/><font color='red'>用例编号: </font> test_inquire_003<Br/><font color='red'>模块: </font> 05 培训学分<Br/><font color='red'>标题_名称: </font>验证 查询操作<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/CreditInquire<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_query_inquire.Test_query_inquire#test_query_inquire","112414","<font color='red'>当前执行时间: </font> 2021-09-08 23:45:04<Br/><font color='red'>用例编号: </font> test_query_inquire_005<Br/><font color='red'>模块: </font> 05 培训记录查询<Br/><font color='red'>标题_名称: </font>验证 操作<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/RecordInquire<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_home.Test_home#test_student_details","61250","<font color='red'>当前执行时间: </font> 2021-09-08 23:38:27<Br/><font color='red'>用例编号: </font> test_student_details_003<Br/><font color='red'>模块: </font>02 首页-学员详情<Br/><font color='red'>标题_名称: </font>验证 查询功能<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_submission.Test_submission#test_submission","97883","<font color='red'>当前执行时间: </font> 2021-09-08 23:40:47<Br/><font color='red'>用例编号: </font> test_tabulate_data_003<Br/><font color='red'>模块: </font>04 培训计划报送<Br/><font color='red'>标题_名称: </font>验证 查询操作<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/PlanSubmit<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_home.Test_home#test_charts","35505","<font color='red'>当前执行时间: </font> 2021-09-08 23:37:10<Br/><font color='red'>用例编号: </font> test_charts_002<Br/><font color='red'>模块: </font>01 首页-数字概览<Br/><font color='red'>标题_名称: </font>验证 参训/达标走势图  是否正确返回<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件: </font>成功登录<Br/><font color='red' >预期结果: </font>正确返回走势图数据<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"failed","testcase.guangdong_classify.test_home.Test_home#test_kinds_standards","14897","<font color='red'>当前执行时间: </font> 2021-09-08 23:37:25<Br/><font color='red'>用例编号: </font> test_kinds_standards_003<Br/><font color='red'>模块: </font>01 首页-数字概览<Br/><font color='red'>标题_名称: </font>验证 各类达标情况  是否正确返回<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件: </font>成功登录<Br/><font color='red' >预期结果: </font>正确返回走势图数据<Br/><font color='red' >实际结果: </font>各类达标情况总参训相加 不等于 总已参训人数<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_credit_inquiry.Test_credit_inquiry#test_operation","59854","<font color='red'>当前执行时间: </font> 2021-09-08 23:47:46<Br/><font color='red'>用例编号: </font> test_operation_005<Br/><font color='red'>模块: </font> 05 培训学分<Br/><font color='red'>标题_名称: </font>验证 操作<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/CreditInquire<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
-"passed","testcase.guangdong_classify.test_home.Test_home#test_company_data","28049","<font color='red'>当前执行时间: </font> 2021-09-08 23:38:55<Br/><font color='red'>用例编号: </font> test_company_data_003<Br/><font color='red'>模块: </font>03 首页-公司数据<Br/><font color='red'>标题_名称: </font>验证 公司数据<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
+"broken","testcase.guangdong_classify.test_home.Test_home#test_company_data","0",""
+"broken","testcase.guangdong_classify.test_home.Test_home#test_kinds_standards","0",""
+"broken","testcase.guangdong_classify.test_home.Test_home#test_student_details","0",""
+"broken","testcase.guangdong_classify.test_home.Test_home#test_charts","0",""
+"broken","testcase.guangdong_classify.test_credit_inquiry.Test_credit_inquiry#test_inquire","0","
+        培训学分查询
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_record_statistical.Test_record_statistical#test_query_inquire","0","
+        查询操作
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_overview_digital","0",""
+"broken","testcase.guangdong_classify.test_submission.Test_submission#test_submission","0","
+        培训计划报送
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_query_inquire.Test_query_inquire#test_query_inquire","0","
+        培训记录查询相关操作
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_tabulate_data","0",""
+"broken","testcase.guangdong_classify.test_credit_inquiry.Test_credit_inquiry#test_operation","0","
+        培训学分查询-操作
+        :param driver:
+        :return:
+        "
