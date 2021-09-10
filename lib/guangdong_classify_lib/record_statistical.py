@@ -25,10 +25,11 @@ class record_statistical:
     def record_statistical_query_inquire(self):
         """
         查询-操作
-        :return:
+        :return: self.driver.text_acquire("div.table-area >div.table div.el-table__body-wrapper tbody>tr:nth-child(2)>td:nth-child(1) div")
         """
         try:
-            self.driver.zzl_company_inquire("中国人寿保险股份有限公司广东省分公司")
+            #print(self.driver.text_acquire("div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(2) > td.is-center.is-hidden > div"))
+            self.driver.zzl_company_inquire("中国人民财产保险股份有限公司广东省分公司")
             self.driver.zzl_pull_down_inquire(2,"2020")
             self.driver.zzl_pull_down_inquire(2,"2021")
             self.driver.zzl_pull_down_inquire(4,"线下")

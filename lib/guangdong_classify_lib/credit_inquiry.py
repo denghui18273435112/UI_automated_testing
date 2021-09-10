@@ -9,8 +9,6 @@ from tools.Allure import alluer
 from tools.logUtil import my_log
 from tools.selenium import selenium
 from config.fixed_options import *
-
-
 class credit_inquiry:
     def     __init__(self,driver,Data):
         self.driver = selenium(driver)
@@ -28,7 +26,7 @@ class credit_inquiry:
         :return:
         """
         try:
-            self.driver.FEBCS_CCSKK("input[placeholder=\"请选择所属机构\"]","中国人寿保险股份有限公司广东省分公司")
+            self.driver.FEBCS_CCSKK("input[placeholder=\"请选择所属机构\"]",self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(1) span"))
             self.driver.click("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)")
             for index in range(len(check_range)):
                 self.driver.pull_down_choose("div div:nth-child(2)>div.el-select>div>span",
@@ -51,8 +49,10 @@ class credit_inquiry:
             # for index in range(len(units)):
             #     self.driver.pull_down_choose("div div:nth-child(10)>div.el-select>div>span",
             #                               "body>div>div>div.el-select-dropdown__wrap.el-scrollbar__wrap>ul>li:nth-child({})".format(index+1))
-            self.driver.FEBCS_CCSKK("div:nth-child(6) > div.el-input > input[placeholder=\"请输入\"]","张金玲",ifhuiche=True)
-            self.driver.FEBCS_CCSKK("div:nth-child(8) > div.el-input > input[placeholder=\"请输入\"]","431281198107266025",ifhuiche=True)
+            self.driver.FEBCS_CCSKK("div:nth-child(6) > div.el-input > input[placeholder=\"请输入\"]",
+                                    self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(2) span"),ifhuiche=True)
+            self.driver.FEBCS_CCSKK("div:nth-child(8) > div.el-input > input[placeholder=\"请输入\"]",
+                                    self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(4) span"),ifhuiche=True)
 
         #截图/校验部分/用于判断用例是否通过/定位不到抛异常
         except BaseException as error:

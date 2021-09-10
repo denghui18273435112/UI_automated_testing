@@ -1,21 +1,21 @@
 {
-  "876efb2111c9a7da86df34fa45d7a5b3" : {
+  "cc20e3d3f31544aea81dbadc00a18e5f" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "da2f8726b92bdb6c",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=93.0.4577.63)",
+      "uid" : "e21e9b517b0849d4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert True == '定位过程中出现元素丢失。原因:'",
       "time" : {
-        "start" : 1631256336459,
-        "stop" : 1631256336459,
-        "duration" : 0
+        "start" : 1631270645309,
+        "stop" : 1631270668257,
+        "duration" : 22948
       }
     } ]
   }

@@ -7,17 +7,16 @@
 import pytest
 from lib.guangdong_classify_lib.query_inquire import query_inquire
 from tools.Yaml_read import Yaml_read
-
-
 class Test_query_inquire(object):
     """
     培训记录查询模块
     """
     #@pytest.mark.skip
+    @pytest.mark.priority_middle
     @pytest.mark.run(order=8)
     def test_query_inquire(self,driver):
         """
-        培训记录查询相关操作
+        培训记录查询-查询、按钮操作
         :param driver:
         :return:
         """

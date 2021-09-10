@@ -2,24 +2,24 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=93.0.4577.63)",
+      "name" : "AssertionError: assert True == '定位过程中出现元素丢失。原因:'",
       "children" : [ {
-        "name" : "test_inquire",
-        "uid" : "da2f8726b92bdb6c",
-        "parentUid" : "6b894275bb7754e09546dc31a818a341",
-        "status" : "broken",
+        "name" : "test_query_inquire",
+        "uid" : "e21e9b517b0849d4",
+        "parentUid" : "d964c6459ad818549636be9d649fdf2f",
+        "status" : "failed",
         "time" : {
-          "start" : 1631256336459,
-          "stop" : 1631256336459,
-          "duration" : 0
+          "start" : 1631270645309,
+          "stop" : 1631270668257,
+          "duration" : 22948
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "6b894275bb7754e09546dc31a818a341"
+      "uid" : "d964c6459ad818549636be9d649fdf2f"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }

@@ -49,7 +49,6 @@ def driver():
             break
     yield driver
     driver.quit()
-
     #截图进行拼接生成gif
     image_list=[]
     for one in os.listdir(photo):

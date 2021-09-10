@@ -12,10 +12,12 @@ class Test_record_statistical(object):
     培训记录统计模块
     """
     #@pytest.mark.skip
+    @pytest.mark.priority_middle
+    @pytest.mark.test
     @pytest.mark.run(order=8)
     def test_query_inquire(self,driver):
         """
-        查询操作
+        培训记录统计模块-查询、按钮操作
         :param driver:
         :return:
         """

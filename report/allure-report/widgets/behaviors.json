@@ -1,4 +1,15 @@
 {
   "total" : 1,
-  "items" : [ ]
+  "items" : [ {
+    "uid" : "283e7a7e8c6545aec086e943d5aa2c6b",
+    "name" : " 05 培训记录统计查询",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }
