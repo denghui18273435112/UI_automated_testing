@@ -6,7 +6,8 @@ if __name__ == "__main__":
     #pytest.main(["-s","./testcase/guangdong_classify/test_query_inquire.py","--alluredir", result_path()])
 
     #正式使用
-    pytest.main(["-s","./testcase/guangdong_classify/","--alluredir", result_path()])
-
+    pytest.main(["-s","./testcase/guangdong_classify/",
+                  '-m','smoke',
+                 "--alluredir", result_path()])
     os.system("allure generate {0} -o {1} --clean".format(result_path(), report_path()))
     os.system("allure serve {}".format(result_path()))

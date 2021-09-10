@@ -27,8 +27,8 @@
 #线上登录 sxpx10 省公司  gd-sxxh-002 协会
 login:
   url: "https://platform.giiatop.com/cip/#/login"
-  login_account: "gd-sxxh-002"
-  password: "gd-sxxh-002"
+  login_account: "zrc@gdbx.com"
+  password: "admin123"
   login_pass_url: "https://platform.giiatop.com/cip/#/PracticeCMS/Home"
   code: "test"
   new_url: "https://platform.giiatop.com/cip/#/"

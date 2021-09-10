@@ -4,145 +4,21 @@
   "children" : [ {
     "name" : "SZPC065",
     "children" : [ {
-      "name" : "23140-MainThread",
+      "name" : "15768-MainThread",
       "children" : [ {
-        "name" : "test_company_data",
-        "uid" : "2992157aa81d8436",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253221,
-          "stop" : 1631150253221,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_kinds_standards",
-        "uid" : "f192de115e166910",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253070,
-          "stop" : 1631150253070,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_student_details",
-        "uid" : "9043ed379a84f47a",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253151,
-          "stop" : 1631150253151,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_charts",
-        "uid" : "75bf880dc15cb6e3",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253000,
-          "stop" : 1631150253000,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
         "name" : "test_inquire",
-        "uid" : "a46fadbdd6da105",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
+        "uid" : "da2f8726b92bdb6c",
+        "parentUid" : "adf8613f670a42505f3b7a3f30986526",
         "status" : "broken",
         "time" : {
-          "start" : 1631150253449,
-          "stop" : 1631150253449,
+          "start" : 1631256336459,
+          "stop" : 1631256336459,
           "duration" : 0
         },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_query_inquire",
-        "uid" : "e345d06369030a3c",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253599,
-          "stop" : 1631150253599,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_submission",
-        "uid" : "a5e558c56a9cd4f",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253366,
-          "stop" : 1631150253366,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_query_inquire",
-        "uid" : "df9d2b015269614c",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253525,
-          "stop" : 1631150253525,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_tabulate_data",
-        "uid" : "cd48768a34b88bb0",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253294,
-          "stop" : 1631150253294,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_operation",
-        "uid" : "24d20dc187cc2e3",
-        "parentUid" : "d9eb5021e9eea6befa0f1341580465f7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253670,
-          "stop" : 1631150253670,
-          "duration" : 0
-        },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d9eb5021e9eea6befa0f1341580465f7"
-    }, {
-      "name" : "15256-MainThread",
-      "children" : [ {
-        "name" : "test_overview_digital",
-        "uid" : "b92b0646f0364f72",
-        "parentUid" : "e082db756b100dc7e34835c79d71f0bc",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631144626946,
-          "stop" : 1631144626946,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "e082db756b100dc7e34835c79d71f0bc"
+      "uid" : "adf8613f670a42505f3b7a3f30986526"
     } ],
     "uid" : "c6f266818e14d7fa60afa267f67f2dc4"
   } ]

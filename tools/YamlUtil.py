@@ -44,6 +44,7 @@ def Yaml_file_pathS(Yaml_name, filePath="config"):
     """
     current =os.path.abspath(__file__)
     BASE_DIR = os.path.dirname(os.path.dirname(current))
+
     _config_path= BASE_DIR +os.sep+filePath
     return _config_path +os.sep+Yaml_name
 

@@ -2,160 +2,20 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcase.guangdong_classify",
+    "name" : "testcase.guangdong_classify.test_credit_inquiry",
     "children" : [ {
-      "name" : "test_home",
-      "children" : [ {
-        "name" : "test_overview_digital",
-        "uid" : "b92b0646f0364f72",
-        "parentUid" : "456cd00b56f4657ed9d9455e019d6605",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631144626946,
-          "stop" : 1631144626946,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_charts",
-        "uid" : "75bf880dc15cb6e3",
-        "parentUid" : "456cd00b56f4657ed9d9455e019d6605",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253000,
-          "stop" : 1631150253000,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_kinds_standards",
-        "uid" : "f192de115e166910",
-        "parentUid" : "456cd00b56f4657ed9d9455e019d6605",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253070,
-          "stop" : 1631150253070,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_student_details",
-        "uid" : "9043ed379a84f47a",
-        "parentUid" : "456cd00b56f4657ed9d9455e019d6605",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253151,
-          "stop" : 1631150253151,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_company_data",
-        "uid" : "2992157aa81d8436",
-        "parentUid" : "456cd00b56f4657ed9d9455e019d6605",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253221,
-          "stop" : 1631150253221,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_tabulate_data",
-        "uid" : "cd48768a34b88bb0",
-        "parentUid" : "456cd00b56f4657ed9d9455e019d6605",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253294,
-          "stop" : 1631150253294,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "456cd00b56f4657ed9d9455e019d6605"
-    }, {
-      "name" : "test_submission",
-      "children" : [ {
-        "name" : "test_submission",
-        "uid" : "a5e558c56a9cd4f",
-        "parentUid" : "8933b560cb6ccca603630759aa96653f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253366,
-          "stop" : 1631150253366,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8933b560cb6ccca603630759aa96653f"
-    }, {
-      "name" : "test_credit_inquiry",
-      "children" : [ {
-        "name" : "test_inquire",
-        "uid" : "a46fadbdd6da105",
-        "parentUid" : "951a9dfb563b807ca97c39a53508d3cf",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253449,
-          "stop" : 1631150253449,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_operation",
-        "uid" : "24d20dc187cc2e3",
-        "parentUid" : "951a9dfb563b807ca97c39a53508d3cf",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253670,
-          "stop" : 1631150253670,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "951a9dfb563b807ca97c39a53508d3cf"
-    }, {
-      "name" : "test_query_inquire",
-      "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "df9d2b015269614c",
-        "parentUid" : "329f635a972565252469a53bece43aea",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253525,
-          "stop" : 1631150253525,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "329f635a972565252469a53bece43aea"
-    }, {
-      "name" : "test_record_statistical",
-      "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "e345d06369030a3c",
-        "parentUid" : "758e99eafc2337cefe55710abb0a445b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631150253599,
-          "stop" : 1631150253599,
-          "duration" : 0
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "758e99eafc2337cefe55710abb0a445b"
+      "name" : "test_inquire",
+      "uid" : "da2f8726b92bdb6c",
+      "parentUid" : "951a9dfb563b807ca97c39a53508d3cf",
+      "status" : "broken",
+      "time" : {
+        "start" : 1631256336459,
+        "stop" : 1631256336459,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
     } ],
-    "uid" : "testcase.guangdong_classify"
+    "uid" : "testcase.guangdong_classify.test_credit_inquiry"
   } ]
 }

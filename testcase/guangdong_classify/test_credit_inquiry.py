@@ -14,6 +14,8 @@ class Test_credit_inquiry(object):
     培训学分查询
     """
     #@pytest.mark.skip
+    @pytest.mark.smoke
+    @pytest.mark.training_Credit_Inquiry
     @pytest.mark.run(order=8)
     def test_inquire(self,driver):
         """
