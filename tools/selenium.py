@@ -649,7 +649,7 @@ class selenium(object):
         new_location.click()
         new_location.clear()
         new_location.send_keys(content)
-        time.sleep(5)
+        time.sleep(3)
         self.driver.find_element_by_css_selector("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)").click()
         time.sleep(2)
 
@@ -660,19 +660,19 @@ class selenium(object):
         :param location2:
         :return:
         """
-        time.sleep(2)
+        time.sleep(1.5)
         if location1_type == "css_default":
             location1_click = self.driver.find_element_by_css_selector(location1)
         if location1_type == "css_zzl_1":
             location1_click = self.driver.find_element_by_css_selector("div div:nth-child({})>div.el-select>div>span".format(location1))
         location1_click.click()
-        time.sleep(2)
+        time.sleep(1.5)
         if location2_type == "xpath_default":
             location2_click = self.driver.find_element_by_xpath(location2)
         if location2_type == "xpath_zzl_1":
             location2_click = self.driver.find_element_by_xpath("//ul/li/span[contains(text(),\"{}\")]".format(location2))
         location2_click.click()
-        time.sleep(2)
+        time.sleep(1.5)
 
     def zzl_text_input(self,location,content,Enter=True,empty=True,type="xpath"):
         """
@@ -684,7 +684,7 @@ class selenium(object):
         :param type:  定位的类型
         :return:
         """
-        time.sleep(2)
+        time.sleep(1.5)
         self.driver.implicitly_wait(10)
         if type == "id":
             text_frame = self.driver.find_elements_by_id(location)
@@ -701,13 +701,13 @@ class selenium(object):
         elif location.isalpha() == True:
             text_frame = self.driver.find_element_by_css_selector(" div:nth-child({}) > div > input".format(location))
         text_frame.click()
-        time.sleep(2)
+        time.sleep(1.5)
         if empty == True:
             text_frame.clear()
         text_frame.send_keys(content)
         if  Enter == True:
             text_frame.send_keys(Keys.ENTER)
-        time.sleep(2)
+        time.sleep(1.5)
 
     def zzl_click(self, location,type="xpath"):
         """
@@ -715,7 +715,7 @@ class selenium(object):
         :param location: 定位 ；支持方式:xpthon、id、css
         :return:
         """
-        time.sleep(5)
+        time.sleep(3)
         self.driver.implicitly_wait(10)
         if type =="xpath_starts-with":
             self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location)).click()
@@ -731,5 +731,5 @@ class selenium(object):
             self.driver.find_element_by_css_selector(location).click()
         if type == "id":
             self.driver.find_element_by_id(location).click()
-        time.sleep(5)
+        time.sleep(3)
 

@@ -14,7 +14,7 @@ class Test_credit_inquiry(object):
     """
     #@pytest.mark.skip
     @pytest.mark.priority_tall
-    @pytest.mark.run(order=8)
+    @pytest.mark.run(order=9)
     def test_inquire(self,driver):
         """
         培训学分查询模块-字段查询
@@ -26,7 +26,7 @@ class Test_credit_inquiry(object):
 
     #@pytest.mark.skip
     @pytest.mark.priority_tall
-    @pytest.mark.run(order=9)
+    @pytest.mark.run(order=10)
     def test_operation(self,driver):
         """
         培训学分查询模块-操作(查询、重置、导出、分页跳转)

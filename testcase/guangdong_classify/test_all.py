@@ -28,7 +28,7 @@ class Test_all(object):
 
     #@pytest.mark.skip
     @pytest.mark.priority_middle
-    @pytest.mark.run(order=8)
+    @pytest.mark.run(order=11)
     def test_query_inquire(self,driver):
         """
         培训记录统计模块-查询、按钮操作
@@ -39,8 +39,7 @@ class Test_all(object):
         assert True ==assert_result
 
     @pytest.mark.priority_tall
-    @pytest.mark.test
-    @pytest.mark.run(order=25)
+    @pytest.mark.run(order=12)
     def test_account_management_inquire(self,driver):
         """
         账号管理模块-查询操作

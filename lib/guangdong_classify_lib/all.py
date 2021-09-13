@@ -56,38 +56,34 @@ class all:
         :return:
         """
         try:
-            # self.driver.zzl_text_input("input[placeholder=\"请输入昵称\"]",self.driver.text_acquire(column=2),type="css")
-            # self.driver.zzl_click("重置",type="xpath_starts-with")
-            # for index in range(len(type)):
-            #     self.driver.zzl_pull_down_inquire(2,type[index])
-            #     self.driver.zzl_click("重置",type="xpath_starts-with")
-            # for index in range(len(status)):
-            #     self.driver.zzl_pull_down_inquire(3,status[index])
-            #     self.driver.zzl_click("重置",type="xpath_starts-with")
-            # for index in range(len(login_status)):
-            #     self.driver.zzl_pull_down_inquire(4,login_status[index])
-            #     self.driver.zzl_click("重置",type="xpath_starts-with")
-            # self.driver.zzl_company_inquire(self.driver.text_acquire(column=8))
-            # self.driver.zzl_click("查询",type="xpath_starts-with")
-            # self.driver.zzl_click("重置",type="xpath_starts-with")
-            # self.driver.zzl_click("导出",type="xpath_starts-with")
-            # self.driver.zzl_text_input("//*/span[starts-with(.,\"前往\")]//input",10)
+            name = self.driver.text_acquire(column=2)
             gongsi = self.driver.text_acquire(column=8)
+            self.driver.zzl_text_input("input[placeholder=\"请输入昵称\"]",name,type="css")
+            self.driver.zzl_click("重置",type="xpath_starts-with")
+            for index in range(len(type)):
+                self.driver.zzl_pull_down_inquire(2,type[index])
+                self.driver.zzl_click("重置",type="xpath_starts-with")
+            for index in range(len(status)):
+                self.driver.zzl_pull_down_inquire(3,status[index])
+                self.driver.zzl_click("重置",type="xpath_starts-with")
+            for index in range(len(login_status)):
+                self.driver.zzl_pull_down_inquire(4,login_status[index])
+                self.driver.zzl_click("重置",type="xpath_starts-with")
+            self.driver.zzl_company_inquire(self.driver.text_acquire(column=8))
+            self.driver.zzl_click("查询",type="xpath_starts-with")
+            self.driver.zzl_click("重置",type="xpath_starts-with")
+            self.driver.zzl_click("导出",type="xpath_starts-with")
+            self.driver.zzl_text_input("//*/span[starts-with(.,\"前往\")]//input",10)
             self.driver.zzl_click("div.table-area div.export>span:nth-child(3)",type="css")
-            # self.driver.zzl_text_input("请输入用户名","denghui00001",type="css_text")
-            # self.driver.zzl_text_input("请输入用户昵称","denghui00001",type="css_text")
-            # self.driver.zzl_text_input("请输入手机号","18273435112",type="css_text")
-            # self.driver.zzl_text_input("请输入新密码","denghui921206",type="css_text")
-            # self.driver.zzl_text_input("再次输入密码","denghui921206",type="css_text")
-
-
-            self.driver.zzl_company_inquire(location="div.content div>div:nth-child(6) div.el-cascader",content="中国人民财产保险股份有限公司广东省分公司")
-
+            self.driver.zzl_text_input("请输入用户名","denghui00001",type="css_text")
+            self.driver.zzl_text_input("请输入用户昵称","denghui00001",type="css_text")
+            self.driver.zzl_text_input("请输入手机号","18273435112",type="css_text")
+            self.driver.zzl_text_input("请输入新密码","denghui921206",type="css_text")
+            self.driver.zzl_text_input("再次输入密码","denghui921206",type="css_text")
         #截图/校验部分/用于判断用例是否通过/定位不到抛异常
         except BaseException as error:
-            pass
-            # self.Data["actual_result"] = self.Data["location_fail_hint"]+error
-            # my_log().debug(self.Data["actual_result"])
+            self.Data["actual_result"] = self.Data["location_fail_hint"]+error
+            my_log().debug(self.Data["actual_result"])
         self.driver.screenShots()
         alluer(self.Data)
         return self.Data["actual_result"]
