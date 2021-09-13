@@ -85,14 +85,18 @@ class selenium(object):
         """
         self.driver.send_keys(content)
 
-    def text_acquire(self, location):
+    def text_acquire(self, location=None,row="1",column=None):
         """
         根据定位获取文本信息，并直接返回
         :param location:
         :return:
         """
-        dingwei = self.driver.find_element_by_css_selector(location)
+        if  location!=None:
+            dingwei = self.driver.find_element_by_css_selector(location)
+        elif column!=None:
+            dingwei = self.driver.find_element_by_css_selector("div.el-table__body-wrapper tbody>tr:nth-child({0})>td:nth-child({1})".format(row,column))
         return dingwei.text
+
 
     def find_element_by_id(self,id):
         self.driver.find_element_by_id(id)
@@ -641,17 +645,18 @@ class selenium(object):
         :return:
         """
         time.sleep(2)
-        self.driver.find_element_by_css_selector(location).click()
-        self.driver.find_element_by_css_selector(location).clear()
-        self.driver.find_element_by_css_selector(location).send_keys(content)
-        time.sleep(2)
+        new_location = self.driver.find_element_by_css_selector(location)
+        new_location.click()
+        new_location.clear()
+        new_location.send_keys(content)
+        time.sleep(5)
         self.driver.find_element_by_css_selector("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)").click()
         time.sleep(2)
 
     def zzl_pull_down_inquire(self,location1,location2,location1_type="css_zzl_1",location2_type="xpath_zzl_1"):
         """
         下拉框筛选
-        :param location1:
+        :param location1: 第n个字段就写n
         :param location2:
         :return:
         """
@@ -691,9 +696,12 @@ class selenium(object):
             text_frame = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location))
         elif type == "xpath_contains_text":
             text_frame = self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location))
+        elif type == "css_text":
+            text_frame = self.driver.find_element_by_css_selector("input[placeholder=\"{}\"]".format(location))
         elif location.isalpha() == True:
             text_frame = self.driver.find_element_by_css_selector(" div:nth-child({}) > div > input".format(location))
         text_frame.click()
+        time.sleep(2)
         if empty == True:
             text_frame.clear()
         text_frame.send_keys(content)
@@ -724,3 +732,4 @@ class selenium(object):
         if type == "id":
             self.driver.find_element_by_id(location).click()
         time.sleep(5)
+

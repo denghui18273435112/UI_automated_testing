@@ -9,5 +9,3 @@ if __name__ == "__main__":
     pytest.main(["-s","./testcase/guangdong_classify/",
                   '-m','test or test',
                  "--alluredir", result_path()])
-    os.system("allure generate {0} -o {1} --clean".format(result_path(), report_path()))
-    os.system("allure serve {}".format(result_path()))

@@ -23,6 +23,7 @@
 #    assert_fail_hint:  "
 #    location_fail_hint: "定位过程中出现元素丢失。原因:"
 #    data:
+
 ---
 #线上登录 sxpx10 省公司  gd-sxxh-002 协会
 login:
@@ -179,6 +180,18 @@ record_statistical_query_inquire:
     name:  "验证 操作"
     priority: "高"
     URL:  "PracticeCMS/RecordStatistics"
+    preposition:
+    expected_result:
+    actual_result: True
+    assert_fail_hint:
+    location_fail_hint: "定位过程中出现元素丢失。原因:"
+    data:
+account_management_inquire:
+    test_id: "test_account_management_inquire_005"
+    module:  " 06 账号管理-查询操作"
+    name:  "验证 操作"
+    priority: "高"
+    URL:  "PracticeCMS/AccountManage"
     preposition:
     expected_result:
     actual_result: True

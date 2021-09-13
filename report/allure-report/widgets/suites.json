@@ -4,8 +4,8 @@
     "uid" : "8efcf4d9d4b5d4698b52dda72761e948",
     "name" : "testcase.guangdong_classify",
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
