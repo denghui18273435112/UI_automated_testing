@@ -47,6 +47,7 @@ def driver():
         selenium(driver).click("span.login-button")
         if selenium(driver).get_url() ==login["login_pass_url"]:
             break
+
     yield driver
     driver.quit()
     #截图进行拼接生成gif
