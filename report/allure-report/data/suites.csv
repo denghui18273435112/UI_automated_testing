@@ -1,6 +1,61 @@
 "Status","Name","Duration in ms","Description"
-"broken","testcase.guangdong_classify.test_account_management.Test_account_management#test_account_management_inquire","46759","
+"broken","testcase.guangdong_classify.test_home.Test_home#test_overview_digital","0","
+        数字概览-统计数据自动核对
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_credit_inquiry.Test_credit_inquiry#test_inquire","0","
+        培训学分查询模块-字段查询
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_all.Test_all#test_account_management_inquire","0","
         账号管理模块-查询操作
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_credit_inquiry.Test_credit_inquiry#test_operation","0","
+        培训学分查询模块-操作(查询、重置、导出、分页跳转)
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_all.Test_all#test_query_inquire","0","
+        培训记录统计模块-查询、按钮操作
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_submission.Test_submission#test_submission","0","
+        培训计划报送模块-查询、导出
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_kinds_standards","0","
+        数字概览-各类达标情况-数据核对
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_student_details","0","
+        学员详情-字段查询
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_query_inquire.Test_query_inquire#test_query_inquire","0","
+        培训记录查询-查询、按钮操作
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_tabulate_data","0","
+        汇总数据-查询
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_company_data","0","
+        公司数据-查询导出
+        :param driver:
+        :return:
+        "
+"broken","testcase.guangdong_classify.test_home.Test_home#test_charts","0","
+        数字概览-参训/达标走势图查询
         :param driver:
         :return:
         "
