@@ -743,8 +743,8 @@ class selenium(object):
             new_location = self.driver.find_element_by_css_selector(location)
         if type == "id":
             new_location = self.driver.find_element_by_id(location)
-        # time.sleep(1)
         new_location.click()
+        time.sleep(5)
 
 
     def zzl_text_acquire(self, location=None,row=None,column=None):

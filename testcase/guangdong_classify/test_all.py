@@ -20,7 +20,6 @@ class Test_all(object):
         assert_result =all(driver,Yaml_read("all.yaml","record_statistical_query_inquire")).record_statistical_query_inquire()
         assert True ==assert_result
 
-    @pytest.mark.test
     @pytest.mark.priority_tall
     @pytest.mark.run(order=12)
     def test_account_management_inquire(self,driver):

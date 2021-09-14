@@ -11,3 +11,4 @@ if __name__ == "__main__":
                  "--alluredir", result_path()])
     # os.system("allure generate {0} -o {1} --clean".format(result_path(), report_path()))
     # os.system("allure serve {}".format(result_path()))
+    #    @pytest.mark.test
