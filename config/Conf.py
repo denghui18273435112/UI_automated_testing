@@ -1,5 +1,4 @@
 import os
-
 import tools.YamlUtil
 
 current =os.path.abspath(__file__)                          #当前文件的路径
