@@ -5,7 +5,6 @@ class Test_home(object):
     """
     首页模块
     """
-
     #@pytest.mark.skip
     @pytest.mark.priority_tall
     @pytest.mark.run(order=1)

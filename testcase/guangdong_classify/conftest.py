@@ -20,7 +20,7 @@ def driver():
     :return:
     """
     #清空报告文件夹下的垃圾文件
-    print("\n>>清空无关图片文件中....>>\n")
+    print("\n>>清空无关图片或文件中....>>\n")
     try:
         for one in os.listdir(result_path()):
             if "environment.properties" not in one:
@@ -33,9 +33,9 @@ def driver():
     print("\n>>安装最新插件中.....>>\n")
     os.system("pip freeze > requirements.txt")
     print("\n>>进入UI自动化测试环节.....>>\n")
-    #窗口是否可见；False 可见；True 不可见
+    #打开浏览器
     option = ChromeOptions()
-    option.headless =True
+    option.headless =False
     option.add_argument('window-size=1920x1080')
     driver = webdriver.Chrome(options=option)
     driver.maximize_window()
@@ -48,16 +48,16 @@ def driver():
     selenium(driver).input_text("请输入密码",login["password"])
     while True:
         #获取验证码截图并保存
-        element =driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img') # 定位验证码图片
-        left = int(element.location['x'])  # 获取图片左上角坐标x
-        top = int(element.location['y'])  # 获取图片左上角y
-        right = int(element.location['x'] + element.size['width'])    # 获取图片右下角x
-        bottom = int(element.location['y'] + element.size['height'])  # 获取图片右下角y
-        path = _file_path + os.sep + 'code.png'  # 生成随机文件名
-        driver.save_screenshot(path)    # 截取当前窗口并保存图片
-        im = Image.open(path)        # 打开图片
-        im = im.crop((left, top, right, bottom))  # 截图验证码
-        im.save(path)    # 保存验证码图片
+        element =driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img')
+        left = int(element.location['x'])
+        top = int(element.location['y'])
+        right = int(element.location['x'] + element.size['width'])
+        bottom = int(element.location['y'] + element.size['height'])
+        path = _file_path + os.sep + 'code.png'
+        driver.save_screenshot(path)
+        im = Image.open(path)
+        im = im.crop((left, top, right, bottom))
+        im.save(path)
         print("\n识别的验证码:{}\n".format(verification_code()))
 
         #手动登录
@@ -65,7 +65,6 @@ def driver():
         # time.sleep(2)
         #自动登录
         selenium(driver).input_text("请输入验证码",verification_code())
-
         selenium(driver).click("span.login-button")
         if selenium(driver).get_url() ==login["login_pass_url"]:
             break
