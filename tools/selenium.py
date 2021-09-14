@@ -60,8 +60,9 @@ class selenium(object):
         清空文本数据
         :return:
         """
-        self.driver.find_element_by_css_selector(location)
-        self.driver.clear()
+        self.driver.implicitly_wait(20)
+        location_new = self.driver.find_element_by_css_selector(location)
+        location_new.clear()
 
     def get_url(self):
         """
@@ -91,6 +92,8 @@ class selenium(object):
         :param location:
         :return:
         """
+        time.sleep(1)
+        self.driver.implicitly_wait(50)
         if  location!=None:
             dingwei = self.driver.find_element_by_css_selector(location)
         elif column!=None:
@@ -138,17 +141,19 @@ class selenium(object):
         """
         time.sleep(2)
         self.driver.implicitly_wait(30)
-        self.driver.find_element_by_css_selector(location1).click()
+        location1_new = self.driver.find_element_by_css_selector(location1)
+        location1_new.click()
         self.driver.implicitly_wait(30)
         time.sleep(2)
         if type == "CSS_CSS":
-            self.driver.find_element_by_css_selector(location2).click()
+            location2_new = self.driver.find_element_by_css_selector(location2)
         if type == "CSS_XPATH":
-            self.driver.find_element_by_xpath(location2).click()
+            location2_new = self.driver.find_element_by_xpath(location2)
         if type == "xpath_starts_with":
-            self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location2))
+            location2_new = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location2))
         if type == "xpath_contains_text":
-            self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location2))
+            location2_new = self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location2))
+        location2_new.click()
         time.sleep(3)
         self.driver.implicitly_wait(30)
 
@@ -194,9 +199,13 @@ class selenium(object):
         @param photo: 图片文件的名称
         @return:
         """
-        self.driver.find_element_by_css_selector(location1).click()
+        self.driver.implicitly_wait(10)
+        location1_new = self.driver.find_element_by_css_selector(location1)
+        location1_new.click()
         time.sleep(0.5)
-        self.driver.find_element_by_css_selector(location2).click()
+        self.driver.implicitly_wait(10)
+        location2_new = self.driver.find_element_by_css_selector(location2)
+        location2_new.click()
         time.sleep(0.5)
         upload_files(photo)
         self.driver.implicitly_wait(10)
@@ -213,12 +222,12 @@ class selenium(object):
         """
         self.driver.implicitly_wait(10)
         time.sleep(3)
-        self.driver.find_element_by_css_selector(location).click()
-        self.driver.find_element_by_css_selector(location).clear()
-        self.driver.find_element_by_css_selector(location).send_keys(content)
+        location_new = self.driver.find_element_by_css_selector(location)
+        location_new.click()
+        location_new.clear()
+        location_new.send_keys(content)
         if ifhuiche==True:
-            self.driver.find_element_by_css_selector(location).send_keys(Keys.ENTER)
-        self.driver.implicitly_wait(10)
+            location_new.send_keys(Keys.ENTER)
         time.sleep(3)
 
     def input_text(self, location, content,fushu=None, Enter=None,type=None):
@@ -230,8 +239,7 @@ class selenium(object):
        @return:
        """
         if fushu ==None:
-            time.sleep(1)
-            self.driver.implicitly_wait(10)
+            self.driver.implicitly_wait(50)
             if '\u4e00' <= location <= '\u9fff':
                 new_driver = self.driver.find_element_by_css_selector("input[placeholder=\"{0}\"]".format(location))
             elif ">" in location or "#" in location:
@@ -246,8 +254,7 @@ class selenium(object):
             if Enter == 0:
                 new_driver.send_keys(Keys.ENTER)
         else:
-            time.sleep(1)
-            self.driver.implicitly_wait(10)
+            self.driver.implicitly_wait(50)
             if '\u4e00' <= location <= '\u9fff':
                 new_driver = self.driver.find_elements_by_css_selector("input[placeholder=\"{0}\"]".format(location))[fushu]
             elif ">" in location or "#" in location:
@@ -644,14 +651,17 @@ class selenium(object):
         :param content:
         :return:
         """
-        time.sleep(3)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
         new_location = self.driver.find_element_by_css_selector(location)
         new_location.click()
         new_location.clear()
         new_location.send_keys(content)
-        time.sleep(3)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
         self.driver.find_element_by_css_selector("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)").click()
-        time.sleep(3)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
 
     def zzl_pull_down_inquire(self,location1,location2,location1_type="css_zzl_1",location2_type="xpath_zzl_1"):
         """
@@ -660,19 +670,21 @@ class selenium(object):
         :param location2:
         :return:
         """
-        time.sleep(2)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
         if location1_type == "css_default":
             location1_click = self.driver.find_element_by_css_selector(location1)
         if location1_type == "css_zzl_1":
             location1_click = self.driver.find_element_by_css_selector("div div:nth-child({})>div.el-select>div>span".format(location1))
         location1_click.click()
-        time.sleep(2)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
         if location2_type == "xpath_default":
             location2_click = self.driver.find_element_by_xpath(location2)
         if location2_type == "xpath_zzl_1":
             location2_click = self.driver.find_element_by_xpath("//ul/li/span[contains(text(),\"{}\")]".format(location2))
         location2_click.click()
-        time.sleep(2)
+
 
     def zzl_text_input(self,location,content,Enter=True,empty=True,type="xpath"):
         """
@@ -684,8 +696,8 @@ class selenium(object):
         :param type:  定位的类型
         :return:
         """
-        time.sleep(1.5)
-        self.driver.implicitly_wait(10)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
         if type == "id":
             text_frame = self.driver.find_elements_by_id(location)
         elif type == "css":
@@ -701,13 +713,13 @@ class selenium(object):
         elif location.isalpha() == True:
             text_frame = self.driver.find_element_by_css_selector(" div:nth-child({}) > div > input".format(location))
         text_frame.click()
-        time.sleep(1.5)
+        # time.sleep(1)
         if empty == True:
             text_frame.clear()
         text_frame.send_keys(content)
         if  Enter == True:
             text_frame.send_keys(Keys.ENTER)
-        time.sleep(1.5)
+        # time.sleep(1)
 
     def zzl_click(self, location,type="xpath"):
         """
@@ -715,23 +727,25 @@ class selenium(object):
         :param location: 定位 ；支持方式:xpthon、id、css
         :return:
         """
-        time.sleep(3)
-        self.driver.implicitly_wait(10)
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
         if type =="xpath_starts-with":
-            self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location)).click()
+            new_location = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location))
         if type == "xpath_contains_text":
-            self.driver.find_element_by_xpath("//*/span[contains(text(),\"{}\")]".format(location)).click()
+            new_location = self.driver.find_element_by_xpath("//*/span[contains(text(),\"{}\")]".format(location))
         if type == "xpath":
-            self.driver.find_element_by_xpath(location).click()
+            new_location = self.driver.find_element_by_xpath(location)
         if type == "xpath_text":
-            self.driver.find_element_by_xpath("//*[text()=\"{}\"]".format(location)).click()
+            new_location = self.driver.find_element_by_xpath("//*[text()=\"{}\"]".format(location))
         if type == "css_input":
-            self.driver.find_element_by_css_selector("input[placeholder=\"{0}\"]".format(location)).click()
+            new_location = self.driver.find_element_by_css_selector("input[placeholder=\"{0}\"]".format(location))
         if type == "css":
-            self.driver.find_element_by_css_selector(location).click()
+            new_location = self.driver.find_element_by_css_selector(location)
         if type == "id":
-            self.driver.find_element_by_id(location).click()
-        time.sleep(3)
+            new_location = self.driver.find_element_by_id(location)
+        # time.sleep(1)
+        new_location.click()
+
 
     def zzl_text_acquire(self, location=None,row=None,column=None):
         """

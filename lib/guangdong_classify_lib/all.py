@@ -57,16 +57,15 @@ class all:
             name = self.driver.text_acquire(column=2)
             gongsi = self.driver.text_acquire(column=8)
             self.driver.zzl_text_input("input[placeholder=\"请输入昵称\"]",name,type="css")
-            self.driver.zzl_click("重置",type="xpath_starts-with")
             for index in range(len(type)):
                 self.driver.zzl_pull_down_inquire(2,type[index])
-                self.driver.zzl_click("重置",type="xpath_starts-with")
+            self.driver.zzl_click("重置",type="xpath_starts-with")
             for index in range(len(status)):
                 self.driver.zzl_pull_down_inquire(3,status[index])
-                self.driver.zzl_click("重置",type="xpath_starts-with")
+            self.driver.zzl_click("重置",type="xpath_starts-with")
             for index in range(len(login_status)):
                 self.driver.zzl_pull_down_inquire(4,login_status[index])
-                self.driver.zzl_click("重置",type="xpath_starts-with")
+            self.driver.zzl_click("重置",type="xpath_starts-with")
             self.driver.zzl_company_inquire(self.driver.text_acquire(column=8))
             self.driver.zzl_click("查询",type="xpath_starts-with")
             self.driver.zzl_click("重置",type="xpath_starts-with")
