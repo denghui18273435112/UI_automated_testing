@@ -7,29 +7,27 @@
 import pytest
 from lib.guangdong_classify_lib.all import all
 from tools.Yaml_read import Yaml_read
-def setup_module():
-    print("\n全局前")
-def teardown_module():
-    print("全局后")
+# def setup_module():
+#     print("\n>>全局前>>")
+# def teardown_module():
+#     print(">>全局后>>")
+
 class Test_all(object):
-    """
-    账号管理模块
-    """
-    def setup_class(self):
-        print("Test_foodManagement类中运行的前置")
-    def teardown_class(self):
-        print("Test_foodManagement类中运行的后置")
-    def setup_method(self):
-        print("Test_foodManagement方法中运行的前置")
-    def teardown_method(self):
-        print("Test_foodManagement方法中运行的后置")
+    # def setup_class(self):
+    #     print(">>Test_foodManagement类中运行的前置>>")
+    # def teardown_class(self):
+    #     print(">>Test_foodManagement类中运行的后置>>")
+    # def setup_method(self):
+    #     print(">>Test_foodManagement方法中运行的前置>>")
+    # def teardown_method(self):
+    #     print(">>Test_foodManagement方法中运行的后置>>")
 
     #@pytest.mark.skip
     @pytest.mark.priority_middle
     @pytest.mark.run(order=11)
     def test_query_inquire(self,driver):
         """
-        培训记录统计模块-查询、按钮操作
+        培训记录统计
         :param driver:
         :return:
         """
@@ -40,7 +38,7 @@ class Test_all(object):
     @pytest.mark.run(order=12)
     def test_account_management_inquire(self,driver):
         """
-        账号管理模块-查询操作
+        账号管理
         :param driver:
         :return:
         """

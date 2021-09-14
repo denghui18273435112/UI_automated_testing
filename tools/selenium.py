@@ -733,3 +733,16 @@ class selenium(object):
             self.driver.find_element_by_id(location).click()
         time.sleep(5)
 
+    def zzl_text_acquire(self, location=None,row=None,column=None):
+        """
+        获取文本信息并直接返回
+        :param location: 定位
+        :param row: 第n行
+        :param column: 第n列
+        :return:
+        """
+        if location!=None:
+            dingwei = self.driver.find_element_by_css_selector(location)
+        elif column!=None and row!=None:
+            dingwei = self.driver.find_element_by_css_selector("div.el-table__body-wrapper tbody>tr:nth-child({0})>td:nth-child({1})".format(row,column))
+        return dingwei.text

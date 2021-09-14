@@ -15,8 +15,8 @@
 #    test_id:
 #    module:
 #    name:
-#    priority: "高"
-#    URL:
+#    priority: &priority "高"
+#    URL: *priority
 #    preposition:
 #    expected_result:
 #    actual_result: True
@@ -25,7 +25,7 @@
 #    data:
 
 ---
-#线上登录 sxpx10 省公司  gd-sxxh-002 协会
+#线上登录
 login:
   url: "https://platform.giiatop.com/cip/#/login"
   login_account: "zrc@gdbx.com"
@@ -137,7 +137,7 @@ submission_inquire:
 #培训学分查询
 inquire:
     test_id: "test_inquire_003"
-    module:  " 05 培训学分"
+    module:  " 05 培训学分查询"
     name:  "验证 查询操作"
     priority: "高"
     URL:  "PracticeCMS/CreditInquire"
@@ -150,7 +150,7 @@ inquire:
 #培训学分模块-操作
 operation:
     test_id: "test_operation_005"
-    module:  " 05 培训学分"
+    module:  " 05 培训学分查询"
     name:  "验证 操作"
     priority: "高"
     URL:  "PracticeCMS/CreditInquire"
@@ -176,7 +176,7 @@ query_inquire:
 #培训记录统计模块
 record_statistical_query_inquire:
     test_id: "test_record_statistical_query_inquire_005"
-    module:  " 05 培训记录统计查询"
+    module:  " 05 培训记录统计"
     name:  "验证 操作"
     priority: "高"
     URL:  "PracticeCMS/RecordStatistics"
@@ -186,10 +186,11 @@ record_statistical_query_inquire:
     assert_fail_hint:
     location_fail_hint: "定位过程中出现元素丢失。原因:"
     data:
+#账号管理
 account_management_inquire:
     test_id: "test_account_management_inquire_005"
-    module:  " 06 账号管理-查询操作"
-    name:  "验证 操作"
+    module:  " 06 账号管理"
+    name:  "验证 查询操作"
     priority: "高"
     URL:  "PracticeCMS/AccountManage"
     preposition:

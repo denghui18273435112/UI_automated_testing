@@ -73,15 +73,15 @@ def driver():
     yield driver
     driver.quit()
 
-    print("\n>>自动化测试已结束>>\n")
-    print("\n>>GIF拼接开始,进行中...........>>\n")
-    #截图进行拼接生成gif
-    image_list=[]
-    for one in os.listdir(photo):
-        image_list.append(photo+os.sep+"/{}".format(one))
-    gif_name = BASE_DIR+'\\自动化拼接.gif'
-    frames = []
-    for image_name in image_list:
-        frames.append(imageio.imread(image_name))
-    imageio.mimsave(gif_name, frames, 'GIF', duration=0.8)
-    print("\n>>GIF拼接已结束>>\n")
+    # print("\n>>自动化测试已结束>>\n")
+    # print("\n>>GIF拼接开始,进行中...........>>\n")
+    # #截图进行拼接生成gif
+    # image_list=[]
+    # for one in os.listdir(photo):
+    #     image_list.append(photo+os.sep+"/{}".format(one))
+    # gif_name = BASE_DIR+'\\自动化拼接.gif'
+    # frames = []
+    # for image_name in image_list:
+    #     frames.append(imageio.imread(image_name))
+    # imageio.mimsave(gif_name, frames, 'GIF', duration=0.8)
+    # print("\n>>GIF拼接已结束>>\n")
