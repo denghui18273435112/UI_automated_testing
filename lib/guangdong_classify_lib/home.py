@@ -149,12 +149,12 @@ class home:
         :return:
         """
         try:
-             self.driver.click("//span[contains(text(),'公司数据')]")
-             self.driver.click("div.top20.table-area > div.tabs > span.tables > svg")
-             self.driver.click("div.top20.table-area > div.tabs > span.chart >svg")
+             self.driver.zzl_click("//span[contains(text(),'公司数据')]")
+             self.driver.zzl_click("div.top20.table-area > div.tabs > span.tables > svg","css")
+             self.driver.zzl_click("div.top20.table-area > div.tabs > span.chart >svg","css")
              self.driver.FEBCS_CCSKK("div.condition > div > div > div:nth-child(1) > div > input",
                                      self.driver.text_acquire(" table > tbody > tr:nth-child(1) > td.el-table_1_column_1.is-center > div"),ifhuiche=True)
-             self.driver.click("div.condition > div > div > div:nth-child(2) > span")
+             self.driver.zzl_click("div.condition > div > div > div:nth-child(2) > span","css")
         #截图/校验部分/用于判断用例是否通过/定位不到抛异常
         except BaseException as error:
             self.Data["actual_result"] = self.Data["location_fail_hint"]+error

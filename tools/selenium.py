@@ -644,14 +644,14 @@ class selenium(object):
         :param content:
         :return:
         """
-        time.sleep(2)
+        time.sleep(3)
         new_location = self.driver.find_element_by_css_selector(location)
         new_location.click()
         new_location.clear()
         new_location.send_keys(content)
         time.sleep(3)
         self.driver.find_element_by_css_selector("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)").click()
-        time.sleep(2)
+        time.sleep(3)
 
     def zzl_pull_down_inquire(self,location1,location2,location1_type="css_zzl_1",location2_type="xpath_zzl_1"):
         """
@@ -660,19 +660,19 @@ class selenium(object):
         :param location2:
         :return:
         """
-        time.sleep(1.5)
+        time.sleep(3)
         if location1_type == "css_default":
             location1_click = self.driver.find_element_by_css_selector(location1)
         if location1_type == "css_zzl_1":
             location1_click = self.driver.find_element_by_css_selector("div div:nth-child({})>div.el-select>div>span".format(location1))
         location1_click.click()
-        time.sleep(1.5)
+        time.sleep(3)
         if location2_type == "xpath_default":
             location2_click = self.driver.find_element_by_xpath(location2)
         if location2_type == "xpath_zzl_1":
             location2_click = self.driver.find_element_by_xpath("//ul/li/span[contains(text(),\"{}\")]".format(location2))
         location2_click.click()
-        time.sleep(1.5)
+        time.sleep(3)
 
     def zzl_text_input(self,location,content,Enter=True,empty=True,type="xpath"):
         """
@@ -715,7 +715,7 @@ class selenium(object):
         :param location: 定位 ；支持方式:xpthon、id、css
         :return:
         """
-        time.sleep(3)
+        time.sleep(5)
         self.driver.implicitly_wait(10)
         if type =="xpath_starts-with":
             self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location)).click()
@@ -731,5 +731,5 @@ class selenium(object):
             self.driver.find_element_by_css_selector(location).click()
         if type == "id":
             self.driver.find_element_by_id(location).click()
-        time.sleep(3)
+        time.sleep(5)
 

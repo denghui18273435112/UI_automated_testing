@@ -7,12 +7,10 @@
 import pytest
 from lib.guangdong_classify_lib.all import all
 from tools.Yaml_read import Yaml_read
-
 def setup_module():
     print("\n全局前")
 def teardown_module():
     print("全局后")
-
 class Test_all(object):
     """
     账号管理模块
@@ -35,7 +33,7 @@ class Test_all(object):
         :param driver:
         :return:
         """
-        assert_result = all(driver,Yaml_read("all.yaml","record_statistical_query_inquire")).record_statistical_query_inquire()
+        assert_result =all(driver,Yaml_read("all.yaml","record_statistical_query_inquire")).record_statistical_query_inquire()
         assert True ==assert_result
 
     @pytest.mark.priority_tall

@@ -26,7 +26,7 @@ class query_inquire:
         :return:
         """
         try:
-            self.driver.zzl_company_inquire(self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(1) span"))
+            self.driver.zzl_company_inquire(self.driver.text_acquire(column=1))
             self.driver.zzl_pull_down_inquire(2,"仅限本机构")
             self.driver.zzl_pull_down_inquire(2,"本机构及下级")
             self.driver.zzl_pull_down_inquire(4,"A类：基础保险销售业务知识培训")
@@ -35,10 +35,11 @@ class query_inquire:
             self.driver.zzl_pull_down_inquire(7,"身份证")
             self.driver.zzl_pull_down_inquire(9,"线上")
             self.driver.zzl_pull_down_inquire(10,"其他第三方")
+            self.driver.zzl_click("重置",type="xpath_starts-with")
             self.driver.zzl_text_input("div:nth-child(6) > div.el-input > input[placeholder=\"请输入\"]",
-                                       self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(2) span"),type="css")
+                                       self.driver.text_acquire(column=2),type="css")
             self.driver.zzl_text_input("div:nth-child(8) > div.el-input > input[placeholder=\"请输入\"]",
-                                       self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(4) span"),type="css")
+                                       self.driver.text_acquire(column=4),type="css")
             self.driver.zzl_click("查询",type="xpath_starts-with")
             self.driver.zzl_click("重置",type="xpath_starts-with")
             self.driver.zzl_click("导出",type="xpath_starts-with")

@@ -20,6 +20,7 @@ def driver():
     :return:
     """
     #清空报告文件夹下的垃圾文件
+    print("\n>>清空无关图片文件中....>>\n")
     try:
         for one in os.listdir(result_path()):
             if "environment.properties" not in one:
@@ -28,24 +29,25 @@ def driver():
             if "_截图" in one_1:
                 os.remove(get_file_path_photo()+os.sep+"{}".format(one_1))
     except:
-        print("\n>>没有可删除的文件>>")
+        print("\n>>没有可删除的文件>>\n")
+    print("\n>>安装最新插件中.....>>\n")
     os.system("pip freeze > requirements.txt")
-    #登录
-    login=Yaml_read("all.yaml","login")
+    print("\n>>进入UI自动化测试环节.....>>\n")
     #窗口是否可见；False 可见；True 不可见
     option = ChromeOptions()
-    option.headless =True
+    option.headless =False
     option.add_argument('window-size=1920x1080')
     driver = webdriver.Chrome(options=option)
-    #窗口可见
-    # driver = webdriver.Chrome()
     driver.maximize_window()
+
+    #登录
+    login=Yaml_read("all.yaml","login")
     driver.get(login["url"])
     time.sleep(5)
     selenium(driver).input_text("请输入账号",login["login_account"])
     selenium(driver).input_text("请输入密码",login["password"])
     while True:
-        #获取验证码
+        #获取验证码截图并保存
         element =driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img') # 定位验证码图片
         left = int(element.location['x'])  # 获取图片左上角坐标x
         top = int(element.location['y'])  # 获取图片左上角y
@@ -56,7 +58,7 @@ def driver():
         im = Image.open(path)        # 打开图片
         im = im.crop((left, top, right, bottom))  # 截图验证码
         im.save(path)    # 保存验证码图片
-        print(verification_code())
+        print("\n识别的验证码:{}\n".format(verification_code()))
 
         #手动登录
         # selenium(driver).click("请输入验证码",type="css")
@@ -70,6 +72,9 @@ def driver():
         driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img').click()
     yield driver
     driver.quit()
+
+    print("\n>>自动化测试已结束>>\n")
+    print("\n>>GIF拼接开始,进行中...........>>\n")
     #截图进行拼接生成gif
     image_list=[]
     for one in os.listdir(photo):
@@ -79,3 +84,4 @@ def driver():
     for image_name in image_list:
         frames.append(imageio.imread(image_name))
     imageio.mimsave(gif_name, frames, 'GIF', duration=0.8)
+    print("\n>>GIF拼接已结束>>\n")

@@ -4,118 +4,18 @@
   "children" : [ {
     "name" : "testcase.guangdong_classify",
     "children" : [ {
-      "name" : "test_home",
-      "children" : [ {
-        "name" : "Test_home",
-        "children" : [ {
-          "name" : "test_overview_digital",
-          "uid" : "25ff7707d577485",
-          "parentUid" : "e63688c8a977e3d349894adfc19a29be",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523876014,
-            "stop" : 1631523876014,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_charts",
-          "uid" : "bac84a0fc5985ef0",
-          "parentUid" : "e63688c8a977e3d349894adfc19a29be",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523904780,
-            "stop" : 1631523904780,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_kinds_standards",
-          "uid" : "f2549212c99e057b",
-          "parentUid" : "e63688c8a977e3d349894adfc19a29be",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523904850,
-            "stop" : 1631523904850,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_student_details",
-          "uid" : "224b04b0bb3bcb7d",
-          "parentUid" : "e63688c8a977e3d349894adfc19a29be",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523904931,
-            "stop" : 1631523904931,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_company_data",
-          "uid" : "47cd5448b332a5f8",
-          "parentUid" : "e63688c8a977e3d349894adfc19a29be",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905003,
-            "stop" : 1631523905003,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_tabulate_data",
-          "uid" : "b4313f5ad2cf580a",
-          "parentUid" : "e63688c8a977e3d349894adfc19a29be",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905078,
-            "stop" : 1631523905078,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "e63688c8a977e3d349894adfc19a29be"
-      } ],
-      "uid" : "d4abd24b0623cb1f35c4b18b840ba30b"
-    }, {
-      "name" : "test_submission",
-      "children" : [ {
-        "name" : "Test_submission",
-        "children" : [ {
-          "name" : "test_submission",
-          "uid" : "88ba5cfa8b4a7f34",
-          "parentUid" : "9c1803d29c5d2c3f9483e545f4bd4327",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905150,
-            "stop" : 1631523905150,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "9c1803d29c5d2c3f9483e545f4bd4327"
-      } ],
-      "uid" : "63a8278444796d41d58fa13c9e9404f0"
-    }, {
       "name" : "test_query_inquire",
       "children" : [ {
         "name" : "Test_query_inquire",
         "children" : [ {
           "name" : "test_query_inquire",
-          "uid" : "1f5a6df1443158cd",
+          "uid" : "1aa1930c322b804a",
           "parentUid" : "64f60c0b1d84fd9a2ffa8da8e6f1b19f",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1631523905229,
-            "stop" : 1631523905229,
-            "duration" : 0
+            "start" : 1631597963579,
+            "stop" : 1631598064369,
+            "duration" : 100790
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -123,70 +23,6 @@
         "uid" : "64f60c0b1d84fd9a2ffa8da8e6f1b19f"
       } ],
       "uid" : "8d996435a29885f92eda69223ba407a5"
-    }, {
-      "name" : "test_credit_inquiry",
-      "children" : [ {
-        "name" : "Test_credit_inquiry",
-        "children" : [ {
-          "name" : "test_inquire",
-          "uid" : "9190c0932908efd6",
-          "parentUid" : "b7d192f72a4804d5e574344ada32be66",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905303,
-            "stop" : 1631523905303,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_operation",
-          "uid" : "8086d74f5ae8d0b3",
-          "parentUid" : "b7d192f72a4804d5e574344ada32be66",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905376,
-            "stop" : 1631523905376,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "b7d192f72a4804d5e574344ada32be66"
-      } ],
-      "uid" : "f01e62cb6d453ea2135169438b818dcf"
-    }, {
-      "name" : "test_all",
-      "children" : [ {
-        "name" : "Test_all",
-        "children" : [ {
-          "name" : "test_query_inquire",
-          "uid" : "f6b5802b24100268",
-          "parentUid" : "6ed1c6e443d2e1caad1b8893e538301a",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905450,
-            "stop" : 1631523905450,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test_account_management_inquire",
-          "uid" : "4f30e8e89f1788ba",
-          "parentUid" : "6ed1c6e443d2e1caad1b8893e538301a",
-          "status" : "broken",
-          "time" : {
-            "start" : 1631523905532,
-            "stop" : 1631523905532,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "6ed1c6e443d2e1caad1b8893e538301a"
-      } ],
-      "uid" : "cf519c5027f7dd83cbf4f8827eb8a7d4"
     } ],
     "uid" : "8efcf4d9d4b5d4698b52dda72761e948"
   } ]

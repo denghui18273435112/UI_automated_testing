@@ -27,7 +27,7 @@ class credit_inquiry:
         """
         try:
             self.driver.FEBCS_CCSKK("input[placeholder=\"请选择所属机构\"]",self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(1) span"))
-            self.driver.click("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)")
+            self.driver.zzl_click("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li:nth-child(1)","css")
             for index in range(len(check_range)):
                 self.driver.pull_down_choose("div div:nth-child(2)>div.el-select>div>span",
                                              "//ul/li/*[contains(text(),\"{}\")]".format(check_range[index]),type="CSS_XPATH")
@@ -49,6 +49,8 @@ class credit_inquiry:
             # for index in range(len(units)):
             #     self.driver.pull_down_choose("div div:nth-child(10)>div.el-select>div>span",
             #                               "body>div>div>div.el-select-dropdown__wrap.el-scrollbar__wrap>ul>li:nth-child({})".format(index+1))
+            self.driver.click("重置",type="starts-with")
+            time.sleep(5)
             self.driver.FEBCS_CCSKK("div:nth-child(6) > div.el-input > input[placeholder=\"请输入\"]",
                                     self.driver.text_acquire("div:nth-child(3) div.el-table__body-wrapper  tr:nth-child(1)>td:nth-child(2) span"),ifhuiche=True)
             self.driver.FEBCS_CCSKK("div:nth-child(8) > div.el-input > input[placeholder=\"请输入\"]",

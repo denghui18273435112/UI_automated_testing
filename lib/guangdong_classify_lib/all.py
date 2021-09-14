@@ -30,15 +30,13 @@ class all:
         :return:
         """
         try:
-            #print(self.driver.text_acquire("div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(2) > td.is-center.is-hidden > div"))
             self.driver.zzl_company_inquire("中国人民财产保险股份有限公司广东省分公司")
             self.driver.zzl_pull_down_inquire(2,"2020")
-            self.driver.zzl_pull_down_inquire(2,"2021")
             self.driver.zzl_pull_down_inquire(4,"线下")
             self.driver.zzl_click("导出",type="xpath_starts-with")
             self.driver.zzl_pull_down_inquire(4,"线上")
             self.driver.zzl_pull_down_inquire(5,"本机构")
-            self.driver.zzl_pull_down_inquire(6,"已达标")
+            self.driver.zzl_pull_down_inquire(7,"已达标")
             self.driver.zzl_click("查询",type="xpath_starts-with")
             self.driver.zzl_click("重置",type="xpath_starts-with")
             self.driver.zzl_click("导出",type="xpath_starts-with")
