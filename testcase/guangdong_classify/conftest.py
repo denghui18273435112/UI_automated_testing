@@ -35,7 +35,7 @@ def driver():
     print("\n>>进入UI自动化测试环节.....>>\n")
     #打开浏览器
     option = ChromeOptions()
-    option.headless =True
+    option.headless =False
     option.add_argument('window-size=1920x1080')
     driver = webdriver.Chrome(options=option)
     driver.maximize_window()

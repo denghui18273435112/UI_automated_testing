@@ -21,13 +21,14 @@ class Test_all(object):
         assert True ==assert_result
 
     @pytest.mark.priority_tall
+    @pytest.mark.test
     @pytest.mark.run(order=12)
     def test_account_management_inquire(self,driver):
         """
-        账号管理
+        账号管理-查询操作
         :param driver:
         :return:
         """
         assert_result = all(driver, Yaml_read("all.yaml", "account_management_inquire")).account_management_inquire()
-        assert True ==assert_result
+        assert True == assert_result
 
