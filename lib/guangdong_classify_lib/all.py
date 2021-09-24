@@ -54,14 +54,28 @@ class all:
         :return:
         """
         try:
+            #操作
             self.driver.zzl_pull_down_inquire(2,type[0])
             self.driver.zzl_pull_down_inquire(3,status[0])
             self.driver.zzl_pull_down_inquire(4,login_status[1])
-            self.driver.zzl_company_inquire(self.driver.text_acquire(column=8))
-            self.driver.zzl_text_input("input[placeholder=\"请输入昵称\"]",self.driver.text_acquire(column=2),type="css")
+            #self.driver.zzl_company_inquire(gongsi)
+            name = self.driver.text_acquire(column=2)
+            self.driver.zzl_text_input("input[placeholder=\"请输入昵称\"]",name,type="css")
 
-            time.sleep(10)
-            #gongsi = self.driver.text_acquire(column=8)
+            #查询后列表数据判断
+            judge_data = [name,login_status[1],status[0]]
+            list_position = [2,6,9]
+            list_number = int(self.driver.text_acquire(location=" span.el-pagination__total").split(" ")[1])
+            if list_number > 10:
+                list_number = 10
+            for x in range(list_number):
+                text_data = []
+                for y in list_position:
+                    text_data.append(self.driver.text_acquire(row=x+1,column=y))
+                if judge_data != text_data:
+                    self.Data["actual_result"] = False
+
+            # gongsi = self.driver.text_acquire(column=8)
             # self.driver.zzl_click("查询",type="xpath_starts-with")
             # self.driver.zzl_click("重置",type="xpath_starts-with")
             # self.driver.zzl_click("导出",type="xpath_starts-with")

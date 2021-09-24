@@ -1,25 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: assert True == '定位过程中出现元素丢失。原因:'",
-      "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "1aa1930c322b804a",
-        "parentUid" : "d964c6459ad818549636be9d649fdf2f",
-        "status" : "failed",
-        "time" : {
-          "start" : 1631597963579,
-          "stop" : 1631598064369,
-          "duration" : 100790
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d964c6459ad818549636be9d649fdf2f"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }

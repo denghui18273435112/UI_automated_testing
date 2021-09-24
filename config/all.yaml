@@ -190,7 +190,7 @@ record_statistical_query_inquire:
 account_management_inquire:
     test_id: "test_account_management_inquire_005"
     module:  " 06 账号管理"
-    name:  "验证 查询操作"
+    name:  "账号管理-验证查询并核对"
     priority: "高"
     URL:  "PracticeCMS/AccountManage"
     preposition:

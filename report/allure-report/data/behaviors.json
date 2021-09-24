@@ -2,24 +2,24 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : " 05 培训记录查询",
+    "name" : " 06 账号管理",
     "children" : [ {
-      "name" : "验证 操作",
+      "name" : "验证 查询操作",
       "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "1aa1930c322b804a",
-        "parentUid" : "72974035360dc1855d8375763c6280a4",
-        "status" : "failed",
+        "name" : "test_account_management_inquire",
+        "uid" : "b3703851da752d1a",
+        "parentUid" : "5281fb44602ad272832b1bc96a66d9d0",
+        "status" : "passed",
         "time" : {
-          "start" : 1631597963579,
-          "stop" : 1631598064369,
-          "duration" : 100790
+          "start" : 1632478711709,
+          "stop" : 1632478737119,
+          "duration" : 25410
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "72974035360dc1855d8375763c6280a4"
+      "uid" : "5281fb44602ad272832b1bc96a66d9d0"
     } ],
-    "uid" : "c289de0c0ba92c6bd1114450b0840bbd"
+    "uid" : "87ef128f9087847ae7d5fcee32adf87a"
   } ]
 }

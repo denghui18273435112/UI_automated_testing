@@ -25,7 +25,7 @@ class Test_all(object):
     @pytest.mark.run(order=12)
     def test_account_management_inquire(self,driver):
         """
-        账号管理-查询操作
+        账号管理-查询验证并核对
         :param driver:
         :return:
         """

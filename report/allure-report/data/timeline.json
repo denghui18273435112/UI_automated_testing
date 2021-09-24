@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "SZPC065",
     "children" : [ {
-      "name" : "23768-MainThread",
+      "name" : "10024-MainThread",
       "children" : [ {
-        "name" : "test_query_inquire",
-        "uid" : "1aa1930c322b804a",
-        "parentUid" : "630f2b029e4fe4b714de911cc70a2a58",
-        "status" : "failed",
+        "name" : "test_account_management_inquire",
+        "uid" : "b3703851da752d1a",
+        "parentUid" : "a610e5f3366a80c7778843cfa1e90ad0",
+        "status" : "passed",
         "time" : {
-          "start" : 1631597963579,
-          "stop" : 1631598064369,
-          "duration" : 100790
+          "start" : 1632478711709,
+          "stop" : 1632478737119,
+          "duration" : 25410
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "630f2b029e4fe4b714de911cc70a2a58"
+      "uid" : "a610e5f3366a80c7778843cfa1e90ad0"
     } ],
     "uid" : "c6f266818e14d7fa60afa267f67f2dc4"
   } ]

@@ -1,13 +1,13 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "c289de0c0ba92c6bd1114450b0840bbd",
-    "name" : " 05 培训记录查询",
+    "uid" : "87ef128f9087847ae7d5fcee32adf87a",
+    "name" : " 06 账号管理",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }

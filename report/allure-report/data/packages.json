@@ -2,20 +2,20 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcase.guangdong_classify.test_query_inquire",
+    "name" : "testcase.guangdong_classify.test_all",
     "children" : [ {
-      "name" : "test_query_inquire",
-      "uid" : "1aa1930c322b804a",
-      "parentUid" : "329f635a972565252469a53bece43aea",
-      "status" : "failed",
+      "name" : "test_account_management_inquire",
+      "uid" : "b3703851da752d1a",
+      "parentUid" : "1989f0523c872768c04e2cd1ac346137",
+      "status" : "passed",
       "time" : {
-        "start" : 1631597963579,
-        "stop" : 1631598064369,
-        "duration" : 100790
+        "start" : 1632478711709,
+        "stop" : 1632478737119,
+        "duration" : 25410
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "testcase.guangdong_classify.test_query_inquire"
+    "uid" : "testcase.guangdong_classify.test_all"
   } ]
 }

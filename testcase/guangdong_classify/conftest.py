@@ -34,10 +34,12 @@ def driver():
     os.system("pip freeze > requirements.txt")
     print("\n>>进入UI自动化测试环节.....>>\n")
     #打开浏览器
-    option = ChromeOptions()
-    option.headless =False
-    option.add_argument('window-size=1920x1080')
-    driver = webdriver.Chrome(options=option)
+    # option = ChromeOptions()
+    # option.headless =False
+    # option.add_argument('window-size=1920x1080')
+    # driver = webdriver.Chrome(options=option)
+
+    driver = webdriver.Chrome()
     driver.maximize_window()
 
     #登录
