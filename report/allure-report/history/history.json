@@ -1,20 +1,21 @@
 {
-  "2dc0117a3c4ba0f0a940f3118d5d4435" : {
+  "6ac262494a4fba6d16cbfbdf90fd6c67" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b3703851da752d1a",
-      "status" : "passed",
+      "uid" : "3084394c2921f4c",
+      "status" : "broken",
+      "statusDetails" : "TypeError: must be str, not NoSuchElementException",
       "time" : {
-        "start" : 1632478711709,
-        "stop" : 1632478737119,
-        "duration" : 25410
+        "start" : 1632638871000,
+        "stop" : 1632638912138,
+        "duration" : 41138
       }
     } ]
   }

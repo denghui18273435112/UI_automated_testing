@@ -199,3 +199,39 @@ account_management_inquire:
     assert_fail_hint:
     location_fail_hint: "定位过程中出现元素丢失。原因:"
     data:
+account_management_button_click:
+    test_id: "account_management_button_click_005"
+    module:  " 06 账号管理"
+    name:  "账号管理-点击"
+    priority: "高"
+    URL:  "PracticeCMS/AccountManage"
+    preposition: " "
+    expected_result: " "
+    actual_result: True
+    assert_fail_hint: "查询、重置、导出、分页是否正常点击"
+    location_fail_hint: "定位过程中出现元素丢失。原因:"
+    data:
+test_account_management_add:
+    test_id: "test_account_management_add"
+    module:  " 06 账号管理"
+    name:  "添加账号"
+    priority: "高"
+    URL:  "PracticeCMS/AccountManage"
+    preposition: " "
+    expected_result: " "
+    actual_result: True
+    assert_fail_hint: "成功添加账号。并在列表查看是否存在且是否可登陆"
+    location_fail_hint: "定位过程中出现元素丢失。原因:"
+    data:
+test_account_management_delete:
+    test_id: "test_account_management_add"
+    module:  " 06 账号管理"
+    name:  "删除账号"
+    priority: "高"
+    URL:  "PracticeCMS/AccountManage"
+    preposition: " "
+    expected_result: " "
+    actual_result: True
+    assert_fail_hint: "删除添加账号。在列表再次确认"
+    location_fail_hint: "定位过程中出现元素丢失。原因:"
+    data:

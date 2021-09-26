@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: must be str, not NoSuchElementException",
+      "children" : [ {
+        "name" : "test_account_management_add",
+        "uid" : "3084394c2921f4c",
+        "parentUid" : "2c7dac31f64dd1b47eb67f824d288597",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632638871000,
+          "stop" : 1632638912138,
+          "duration" : 41138
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c7dac31f64dd1b47eb67f824d288597"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

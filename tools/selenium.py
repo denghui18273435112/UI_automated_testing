@@ -663,6 +663,25 @@ class selenium(object):
         time.sleep(1)
         self.driver.implicitly_wait(20)
 
+    def zzl_company_inquire_s(self, content, location="input[placeholder=\"请选择所属机构\"]",type="css"):
+        """
+        保险机构字段选择
+        :param location:
+        :param content:
+        :return:
+        """
+        time.sleep(1)
+        self.driver.implicitly_wait(20)
+        if type =="css":
+            new_location = self.driver.find_element_by_css_selector(location)
+        new_location.click()
+        new_location.send_keys(content)
+        time.sleep(2)
+        self.driver.implicitly_wait(20)
+        self.driver.find_elements_by_css_selector("div.el-cascader__suggestion-panel.el-scrollbar > div.el-scrollbar__wrap > ul > li")[1].click()
+        time.sleep(2)
+        self.driver.implicitly_wait(20)
+
     def zzl_pull_down_inquire(self,location1,location2,location1_type="css_zzl_1",location2_type="xpath_zzl_1"):
         """
         下拉框筛选
@@ -760,3 +779,22 @@ class selenium(object):
         elif column!=None and row!=None:
             dingwei = self.driver.find_element_by_css_selector("div.el-table__body-wrapper tbody>tr:nth-child({0})>td:nth-child({1})".format(row,column))
         return dingwei.text
+
+    def list_judgment(self,judge_data,list_position):
+        """
+        #查询后列表数据判断
+        :param judge_data:查询字段judge_data=[name,login_status[1],status[0]]；此列表是已经处理好的，直接使用
+        :param list_position:列表字段 list_position=[2,6,9]) ；需要再次定位获取列表的文本信息
+        :return:
+        """
+        actual_result = True
+        list_number = int(selenium(self.driver).text_acquire(location="span.el-pagination__total").split(" ")[1])
+        if list_number > 10:
+            list_number = 10
+        for x in range(list_number):
+            text_data = []
+            for y in list_position:
+                text_data.append(selenium(self.driver).text_acquire(row=x+1,column=y))
+            if judge_data != text_data:
+                actual_result = False
+        return actual_result

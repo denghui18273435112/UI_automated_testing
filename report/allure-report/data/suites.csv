@@ -1,2 +1,6 @@
 "Status","Name","Duration in ms","Description"
-"passed","testcase.guangdong_classify.test_all.Test_all#test_account_management_inquire","25410","<font color='red'>当前执行时间: </font> 2021-09-24 18:18:57<Br/><font color='red'>用例编号: </font> test_account_management_inquire_005<Br/><font color='red'>模块: </font> 06 账号管理<Br/><font color='red'>标题_名称: </font>验证 查询操作<Br/><font color='red'>优先级: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/AccountManage<Br/><font color='red' >前置条件: </font>None<Br/><font color='red' >预期结果: </font>None<Br/><font color='red' >实际结果: </font>True<Br/><font color='red' >操作的数据: </font>None<Br/>"
+"broken","testcase.guangdong_classify.test_all.Test_all#test_account_management_add","41138","
+        账号管理-按钮操作
+        :param driver:
+        :return:
+        "

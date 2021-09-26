@@ -1,11 +1,11 @@
 [ {
-  "uid" : "b3703851da752d1a",
-  "name" : "test_account_management_inquire",
+  "uid" : "3084394c2921f4c",
+  "name" : "test_account_management_add",
   "time" : {
-    "start" : 1632478711709,
-    "stop" : 1632478737119,
-    "duration" : 25410
+    "start" : 1632638871000,
+    "stop" : 1632638912138,
+    "duration" : 41138
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 } ]

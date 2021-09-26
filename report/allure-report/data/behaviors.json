@@ -2,24 +2,16 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : " 06 账号管理",
-    "children" : [ {
-      "name" : "验证 查询操作",
-      "children" : [ {
-        "name" : "test_account_management_inquire",
-        "uid" : "b3703851da752d1a",
-        "parentUid" : "5281fb44602ad272832b1bc96a66d9d0",
-        "status" : "passed",
-        "time" : {
-          "start" : 1632478711709,
-          "stop" : 1632478737119,
-          "duration" : 25410
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5281fb44602ad272832b1bc96a66d9d0"
-    } ],
-    "uid" : "87ef128f9087847ae7d5fcee32adf87a"
+    "name" : "test_account_management_add",
+    "uid" : "3084394c2921f4c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1632638871000,
+      "stop" : 1632638912138,
+      "duration" : 41138
+    },
+    "flaky" : false,
+    "parameters" : [ ]
   } ]
 }
