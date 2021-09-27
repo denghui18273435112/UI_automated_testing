@@ -55,7 +55,6 @@ class Test_all(object):
         assert True == assert_result
 
     @pytest.mark.priority_tall
-    @pytest.mark.skip
     @pytest.mark.run(order=15)
     def test_account_management_delete(self,driver):
         """
