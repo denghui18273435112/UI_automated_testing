@@ -126,6 +126,6 @@ def base64_api(uname, pwd, img, typeid):
 
 def verification_code():
     return base64_api(uname='denghui', pwd='dengHUI12', img=_file_path+os.sep+"code.png", typeid=3)
-
+    #return base64_api(uname='denghui', pwd='dengHUI12', img="http://qa.shandong.giiatop.com/base/home/VerificationCode?height=40&width=128&fontsize=20&rnd=0.5321298534442522", typeid=3)
 if __name__ == "__main__":
     print(verification_code())
