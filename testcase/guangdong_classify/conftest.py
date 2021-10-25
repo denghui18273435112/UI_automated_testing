@@ -71,6 +71,8 @@ def driver():
         if selenium(driver).get_url() ==login["login_pass_url"]:
             break
         driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img').click()
+    print(driver.get_cookies())
+    time.sleep(60)
     yield driver
     driver.quit()
 
